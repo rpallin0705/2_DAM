@@ -19,12 +19,11 @@ public class ListarCarpeta {
             File[] listOfFiles = directory.listFiles();
             
             for (File file : listOfFiles) {
-                if (file.isFile()){                   
+                if (file.isFile())                 
                     System.out.printf("\tFile: %s%n", file.getPath());
-                } else if (file.isDirectory()) {
+                else if (file.isDirectory())
                     listarCarpeta(file);
-                    System.out.printf("\t");
-                }
+                
                                
             }
         }
