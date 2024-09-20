@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="price-container">
+            <header>
+                <h1>Basic</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </header>
+        </div>
+        <div class="price-container">
+            <header>
+            <h1>Basic</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </header>
+        </div>
+        <div class="price-container">
+            <header>
+            <h1>Basic</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </header>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to right, #e069c2, #2575fc);
+    }
+
+    .price-container {
+        height: 400px;
+        width: 170px;
+        background-color: rgba(255, 255, 255, 0.137);
+    };
+
+    .price-container > header> h1 {
+        color: white;
+    }
+</style>
