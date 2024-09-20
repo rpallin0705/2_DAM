@@ -9,22 +9,20 @@ public class ListarCarpeta {
             System.exit(1);
         }
         String fileDirectory = args[0];
-        listarCarpeta(new File(fileDirectory));
+        listarCarpeta(new File(fileDirectory), 0);
     }
 
-    public static void listarCarpeta(File directory){
+    public static void listarCarpeta(File directory, int nivel){
         if (directory.isDirectory()) {
-            System.out.printf("Directory: %s%n", directory.getName());
+            System.out.printf("%s%s%s%n","\t".repeat(nivel),"Directory: ", directory.getName());
 
             File[] listOfFiles = directory.listFiles();
             
             for (File file : listOfFiles) {
-                if (file.isFile())                 
-                    System.out.printf("\tFile: %s%n", file.getPath());
+                if (file.isFile())             
+                    System.out.printf("%s%s%n", "\t".repeat(nivel + 1), file.getName());
                 else if (file.isDirectory())
-                    listarCarpeta(file);
-                
-                               
+                    listarCarpeta(file, nivel + 1);              
             }
         }
     }
