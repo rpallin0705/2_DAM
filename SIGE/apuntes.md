@@ -34,3 +34,30 @@
 **Actividad Económica**: Proceso de transformación de recursos en productos y servicios.
 
 **Mercado**: espacio o ámbito (`no necesariamente físico`)onjunto de compradores y vendedores de un producto o servicio.
+
+## Martes 24 de septiembre de 2024
+
+### Clasificación de las empresas
+
+* Segun tamaño:
+    * Microempresas
+    * Pymes
+    * Grandes empresas
+
+* Segun la actividad:
+    * Manufacturera
+    * Comercial
+    * Servicios
+
+* Segun la organización:
+    * Monoproducto
+    * Multiproducto
+    * Multinacional
+
+* Segun capital:
+    * Sociedad Anónima
+    * Sociedad Limitada
+    * Sociedad de Responsabilidad Limitada
+    * Empresas individuales
+
+
