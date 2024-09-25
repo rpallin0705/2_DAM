@@ -1,26 +1,26 @@
-Notas
-========
+# Notas
 
-INTRODUCCION A KOTLIN
-----------------------
+## INTRODUCCION A KOTLIN
 
-Lunes 23 de septiembre
------------------------
+## Lunes 23 de septiembre
 
+## **Nullables**
 
-### **Nullables** -> característica de kotlin que permite que una variable tenga un valor nulo.
+característica de kotlin que permite que una variable tenga un valor nulo
 
 Declaración de una variable nullable: (?)
 
 ```kotlin
 var edad: Int? = null
 ```
+
 Para comprobar si una variable es nullable, se puede usar el **operador Elvis (?)**.
 
 ```kotlin
 val longitudNombre = nombre?.length ?: 0
 println("La longitud del nombre es: $longitudNombre")
 ```
+
 `nombre?` -> comprueba si nombre es null.
 
 `?:` -> operador Elvis.
@@ -33,6 +33,7 @@ println("La longitud del nombre es: $longitudNombre")
 val longitudNombre = nombre!!.length
 println("La longitud del nombre es: $longitudNombre")
 ```
+
 `nombre!!` -> afirma que nombre no es null. `El programador debe asegurarse de que esa variable no va a ser null` Si es null se producirá un error en tiempo de ejecución.
 
 #### **Funciones anullables**
@@ -56,10 +57,10 @@ nombre?.let {
     println("El nombre es null")
 }
 ```
+
 $it -> Hace referencia al valor de la variable nombre
 
-**Estructuras de control**
------------------- -----
+## **Estructuras de control**
 
 ### **When**
 
@@ -77,6 +78,7 @@ fun main() {
     }
 }
 ```
+
 ```kotlin
 fun main() {
     val sueldo = 1000
@@ -90,7 +92,6 @@ fun main() {
 ```
 
 `in 1..1000` -> Se usa para dar un rango de valores.
-
 
 ### **For**
 
@@ -120,13 +121,14 @@ fun main() {
 
 ## Miercoles 25 de septiembre
 
-ARRAYS
----------------------------------------------
+## ARRAYS
+
 
 ```kotlin
 vall arr = IntArray(5)?
 val names = arrayOf("Juan", "Pedro", "Maria", "Luisa", "Ana")
 ```
+
 `arrayOf` -> array inmutable
 
 ### Funciones para crear arrays
@@ -147,6 +149,7 @@ val arr5 = Array(5) { index ->
     }
 }
 ```
+
 `it*2` -> multiplica cada elemento del array por 2.
 
 `index -> index*2` -> multiplica cada elemento del array por 2.
@@ -190,8 +193,6 @@ val groupBy = myArray.groupBy { it % 2 == 0 }
 `distinct()` -> devuelve un array con los elementos distintos.
 
 `groupBy()` -> devuelve un array con los elementos agrupados por una condición.
-
-
 
 ```kotlin
 fun main() {
@@ -267,8 +268,4 @@ fun devuelveSumaArray(arr: Array<Int>): Int {
 
 `return arr.sum()` -> devuelve la suma de los elementos del array.
 
-
-# **`HACER PRACTICA 1 KOTLIN MOODLE`**
-
-
-
+## **`HACER PRACTICA 1 KOTLIN MOODLE`**

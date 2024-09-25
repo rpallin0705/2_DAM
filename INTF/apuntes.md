@@ -1,5 +1,5 @@
 # NOTAS
 
-## Viernes 20/09/2024
+## **Librería MUI para componentes**
 
-### Grid
+## **Repasar codigos HTTP (Para entrevistas)**
