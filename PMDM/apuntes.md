@@ -268,7 +268,7 @@ fun devuelveSumaArray(arr: Array<Int>): Int {
 `return arr.sum()` -> devuelve la suma de los elementos del array.
 
 
-
+# **`HACER PRACTICA 1 KOTLIN MOODLE`**
 
 
 

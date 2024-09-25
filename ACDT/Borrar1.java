@@ -11,8 +11,13 @@ public class Borrar1 {
             if(args[0].equals("-f") && (args[2].equals("-n") || args[2].equals("-e"))){
                 File carpetaContenedora = new File(args[1]);
                 List<String> archivosEncontrados = encontrarArchivos(carpetaContenedora, args);
-                int indexArchivo = Integer.parseInt(System.console().readLine());
-                
+                int opcion = 0;
+                while ((opcion = System.in.read()) != '\n') {
+                    if (opcion == '1') {
+                        
+                    }
+                }
+                    
                 System.out.println("Archivos borrados: " + encontrarArchivos(carpetaContenedora, args));
             } else {
                 usage();
