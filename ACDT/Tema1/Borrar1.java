@@ -25,7 +25,7 @@ public class Borrar1 {
         }
     }
 
-    private static Boolean encontrarArchivos(File carpetaContenedora, String[] argumentos){
+    private static Boolean encontrarArchivos(File carpetaContenedora, String []argumentos){
         File[] contenidoCarpeta = carpetaContenedora.listFiles();
         List<String> archivosEncontrados = new ArrayList<>();
 
