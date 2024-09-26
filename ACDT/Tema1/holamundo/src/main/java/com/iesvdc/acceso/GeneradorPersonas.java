@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.util.List;
 
 import com.iesvdc.acceso.model.Persona;
-import com.iesvdc.acceso.model.Sexo;
 
 public class GeneradorPersonas {
     private List<String> listaNombresHombres;
