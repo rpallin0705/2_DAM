@@ -123,7 +123,6 @@ fun main() {
 
 ## ARRAYS
 
-
 ```kotlin
 vall arr = IntArray(5)?
 val names = arrayOf("Juan", "Pedro", "Maria", "Luisa", "Ana")
@@ -269,3 +268,61 @@ fun devuelveSumaArray(arr: Array<Int>): Int {
 `return arr.sum()` -> devuelve la suma de los elementos del array.
 
 ## **`HACER PRACTICA 1 KOTLIN MOODLE`**
+
+## Jueves 26 de septiembre
+  
+`Mirar lo que hay antes de funciones de Orden superior`
+
+### Funciones de orden superior
+
+```kotlin
+fun suma(a: Int, b: Int): Int = a + b
+fun resta(a: Int, b: Int): Int = a - b
+fun operacion(a: Int, b: Int, fn: (Int, Int) -> Int): Int = fn(a, b)
+
+fun main() {
+    println("La operacion suma es de 2 y 3, es ${operacion(2,3, ::suma)}")
+    println("La operacion resta es de 2 y 3, es ${operacion(2,3, ::resta)}")
+}
+```
+
+`::suma` -> referencia a la función suma.
+
+`::resta` -> referencia a la función resta.
+
+`fn: (Int, Int) -> Int` -> parametro de tipo función que recibe dos enteros y devuelve un entero.
+
+### Funcion anónima
+
+Lo que hace la función anónima se describe más en cada llamada a al función operación. Cada llamada puede establecer un comportamiento diferente para la función anónima que en este caso es `fn`.
+
+```kotlin
+fun operacion(a: Int, b: Int, fn: (Int, Int) -> Int) = fn(a, b) 
+
+fun main() {
+    var res = operacion(2, 3) { a, b -> a + b }
+    println("La operación suma de 2 y 3, es $res")
+
+    res = operacion(2, 3) { a, b -> a - b }
+    println("La operación resta de 2 y 3, es $res")
+}
+```
+
+`{ a, b -> a + b }` -> función anónima que recibe dos enteros y devuelve su suma.
+
+`{ a, b -> a - b }` -> función anónima que recibe dos enteros y devuelve su resta.
+
+**Las funciones anónimas se definen en la llamada a la función que las recibe como parámetro.**
+
+[`Mirar ejemplos del pdf de repaso de kotlin (Pag. 36)`](kotlin.pdf)
+
+### USAR LAMBDAS EN VEZ DE INTERFACES
+
+```kotlin
+fun onButtonClick() {
+    val dialogo = clienteDialogFragment()
+    dialogo.setOnClienteAddedListener { id , nombre ->
+        addCliente(id, nombre)
+    }
+}
+```

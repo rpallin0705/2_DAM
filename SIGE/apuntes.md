@@ -21,8 +21,8 @@
 
 **CRM**: Gestión de relaciones con clientes.
 
-**BI**: Business Intelligence. 
-    
+**BI**: Business Intelligence.
+
     Herramientas destinadas a facilitar información de los clientes.
 
 ## CONOCIMIENTOS BÁSICOS DE LA GESTIÓN EMPRESARIAL
@@ -40,24 +40,26 @@
 ### Clasificación de las empresas
 
 * Segun tamaño:
-    * Microempresas
-    * Pymes
-    * Grandes empresas
+  * Microempresas
+  * Pymes
+  * Grandes empresas
 
 * Segun la actividad:
-    * Manufacturera
-    * Comercial
-    * Servicios
+  * Manufacturera
+  * Comercial
+  * Servicios
 
 * Segun la organización:
-    * Monoproducto
-    * Multiproducto
-    * Multinacional
+  * Monoproducto
+  * Multiproducto
+  * Multinacional
 
 * Segun capital:
-    * Sociedad Anónima
-    * Sociedad Limitada
-    * Sociedad de Responsabilidad Limitada
-    * Empresas individuales
+  * Sociedad Anónima
+  * Sociedad Limitada
+  * Sociedad de Responsabilidad Limitada
+  * Empresas individuales
 
+## Jueves 26 de septiembre
 
+**Departamento**: agrupaciones de personas que realizan  funciones y tareas de características similares.
