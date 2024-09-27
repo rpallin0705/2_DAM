@@ -75,7 +75,16 @@ public class GeneradorPersonas {
          * @TODO
         */
     private String getEmail(Persona persona){
+        String caracteresNoPermitidos = "[áéíóúñç]*";
+        String email =  (persona.getNombre().trim().charAt(0) + persona.getApellidos().trim()).replaceAll(" ", "");
+        
+
+        if (email.matches(caracteresNoPermitidos)) {
+            
+        }
         return "";
+
+       
     }
 
     /**
@@ -85,7 +94,7 @@ public class GeneradorPersonas {
     Persona getRandomPersona() {
         Persona persona = new Persona();
 
-        persona.setApellidos(getRandomString(listaApellidos));
+        persona.setApellidos(getRandomString(listaApellidos) + " " + getRandomString(listaApellidos));
 
         
         persona.setSexo(getRandomSexo());
