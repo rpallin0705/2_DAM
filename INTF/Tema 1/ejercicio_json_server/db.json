@@ -1,0 +1,16 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Portatil intel i7",
+            "precio": 450.50,
+            "description": "Portatil intel i7 16GB RAM 1TB SSD"
+        },
+        {
+            "id": 2,
+            "nombre": "Portatil intel i5",
+            "precio": 350.50,
+            "description": "Portatil intel i5 8GB RAM 500GB SSD"
+        }
+    ]
+}
