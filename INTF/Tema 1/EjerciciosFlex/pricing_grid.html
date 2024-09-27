@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="price-container">
-            <header>
-                <h1>Basic</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </header>
-        </div>
-        <div class="price-container">
-            <header>
-            <h1>Basic</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </header>
-        </div>
-        <div class="price-container">
-            <header>
-            <h1>Basic</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-            </header>
-        </div>
+      <div class="price-container">
+        <h1>Basic</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+        <ul>
+          <li>Easily Lost for days</li>
+          <li>Scratches everything</li>
+          <li>Kind of a bummer</li>
+        </ul>
+        <p class="price">free</p>
+        <p class="btn">😾 Really?</p>
+      </div>
+      <div class="price-container">
+        <h1>Basic</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+        <ul>
+          <li>Easily Lost for days</li>
+          <li>Scratches everything</li>
+          <li>Kind of a bummer</li>
+        </ul>
+        <p class="price">free</p>
+        <p class="btn">😾 Really?</p>
+      </div>
+      <div class="price-container">
+        <h1>Basic</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+        <ul>
+          <li>Easily Lost for days</li>
+          <li>Scratches everything</li>
+          <li>Kind of a bummer</li>
+        </ul>
+        <p class="price">free</p>
+        <p class="btn">😾 Really?</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        height: 100vh;
-        width: 100vw;
-        background: linear-gradient(to right, #e069c2, #2575fc);
-    }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #e069c2, #2575fc);
+  }
 
-    .price-container {
-        height: 400px;
-        width: 170px;
-        background-color: rgba(255, 255, 255, 0.137);
-    };
+  .price-container {
+    margin: 20px;
+    padding: 10px;
+    max-height: 500px;
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.254);
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+  }
 
-    .price-container > header> h1 {
-        color: white;
-    }
+  .price-container h1 {
+    color: white;
+  }
+
+  .price-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .price-container ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .price-container ul li:last-child {
+    border-bottom: none;
+  }
+
+  .price {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  .btn {
+    border-radius: 50px;
+    background: yellow;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .price-container:nth-child(1){
+    height: 90%;
+  }
 </style>
