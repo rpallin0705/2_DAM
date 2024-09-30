@@ -75,24 +75,30 @@ public class GeneradorPersonas {
     }
 
     /**
-     * El correo es :
-     * primera letra del nombre
-     * primer apellido sin espacios
-     * segundo apellido sin espacios
-     * todo en minusculas
-     * quitamos acentos, letra ñ y ç
+     * Genera un email para la persona cogiendo la primera letra del nombre y los
+     * dos apellidos,
+     * pasado todo a minúsculas, sin espacios y sin acentos.
      * 
-     * @TODO
+     * @param La persona a la que se le genera el email
+     * @return El email generado
      */
     private String getEmail(Persona persona) {
         String caracteresNoPermitidos = ".*[áéíóúñç].*";
-        String email = (persona.getNombre().trim().charAt(0) + persona.getApellidos().trim()).replaceAll(" ", "");
+        String email = (persona.getNombre().trim().charAt(0) +
+                persona.getApellidos().trim()).replaceAll(" ", "")
+                .toLowerCase();
 
         if (email.matches(caracteresNoPermitidos)) {
-
+            email = email.replaceAll("[áàäâ]", "a")
+                    .replaceAll("[éèëê]", "e")
+                    .replaceAll("[íìïî]", "i")
+                    .replaceAll("[óòöô]", "o")
+                    .replaceAll("[úùüû]", "u")
+                    .replace("ñ", "n")
+                    .replace("ç", "c");
         }
-        return "";
 
+        return email + "@iesvdc.com";
     }
 
     /**
@@ -119,11 +125,34 @@ public class GeneradorPersonas {
                         : getRandomString(listaNombresMujeres));
                 break;
         }
+
         persona.setNombre(getRandomString(listaNombresHombres));
 
         persona.setEmail(getEmail(persona));
 
+        persona.setNumeroDNI(getRandomDNINumber());
+
+        try {
+            persona.setLetraDNI(calcularLetraDNI(persona.getNumeroDNI()));
+        } catch (DniException e) {
+            System.out.println(e.getMessage());
+        }
+
+        persona.setEmail(getEmail(persona));
+
+        persona.setFechaNacimiento(generarFecha());
+
         return persona;
+    }
+
+    /**
+     * Genera un número de DNI aleatorio entre 10.000.000 y 99.999.999
+     * 
+     * @return Un numero de DNI aleatorio
+     */
+    private int getRandomDNINumber() {
+        // TODO Auto-generated method stub
+        return new Random().nextInt(10000000, 100000000);
     }
 
     /**
@@ -160,17 +189,25 @@ public class GeneradorPersonas {
         return listaPersonas;
     }
 
-    private LocalDate generarFecha(){
-        // Almacenamos en una variable "startingDate" () pasamos a formato UNIX la fecha 1/1/1920
+    /**
+     * Genera una fecha aleatoria entre 1/1/1920 y la fecha actual
+     * 
+     * @return Una fecha aleatoria
+     */
+    private LocalDate generarFecha() {
+        // Almacenamos en una variable "startingDate" () pasamos a formato UNIX la fecha
+        // 1/1/1920
         LocalDate startingDate = LocalDate.of(1920, 1, 1);
-        Long startingDateUnix = startingDate.toEpochDay(); 
-        // Almacenamos en una variable "endingDate" (pasamos a formato UNIX la fecha actual)
+        Long startingDateUnix = startingDate.toEpochDay();
+        // Almacenamos en una variable "endingDate" (pasamos a formato UNIX la fecha
+        // actual)
         LocalDate endingDate = LocalDate.now();
         Long endingDateUnix = endingDate.toEpochDay();
-        // Restamos endingDate - startingDate y generamos un número aleatorio entre 0 y la diferencia de las fechas.
+        // Restamos endingDate - startingDate y generamos un número aleatorio entre 0 y
+        // la diferencia de las fechas.
         Long randomDate = new Random().nextLong(endingDateUnix - startingDateUnix);
         // Pasamos el numero aleatorio a localDate
         return LocalDate.ofEpochDay(randomDate + startingDateUnix);
-        
+
     }
 }

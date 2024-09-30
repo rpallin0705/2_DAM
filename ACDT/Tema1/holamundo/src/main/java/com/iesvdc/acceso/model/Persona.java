@@ -132,14 +132,22 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "{" +
-                " \'nombre\''='':'" + getNombre() + "'" +
-                ", \'apellidos\''='':'" + getApellidos() + "'" +
-                ", \'email\''='':'" + getEmail() + "'" +
-                ", \'numeroDNI\''='':'" + getNumeroDNI() + "'" +
-                ", \'letraDNI\''='':'" + getLetraDNI() + "'" +
-                ", \'fechaNacimiento\''='':'" + getFechaNacimiento() + "'" +
-                "}";
+        return String.format(
+            "{\"nombre\":\"%s\"," +
+            "\"apellidos\":\"%s\"," +
+            "\"sexo\":\"%s\"," +
+            "\"email\":\"%s\"," +
+            "\"numeroDNI\":\"%d\"," +
+            "\"letraDNI\":\"%c\"," +
+            "\"fechaNacimiento\":\"%s\"}",
+            getNombre(),
+            getApellidos(),
+            getSexo(),
+            getEmail(),
+            getNumeroDNI(),
+            getLetraDNI(),
+            getFechaNacimiento()
+        );
     }
 
 }
