@@ -326,3 +326,41 @@ fun onButtonClick() {
     }
 }
 ```
+
+## Lunes 30 de septiembre
+
+### **CLASES**
+
+#### Declaración de una clase
+
+#### **Declaración de una clase**
+
+```kotlin
+class Persona ( var name : String, var age : Int ){ 
+override fun toString() = ("Nombre: $name y su edad: $age") 
+fun isAdult() = (age >= 18)
+}
+
+fun myFun (persons: Array<Persona>, fn : (String) -> Unit ) {
+    persons.forEach{
+        fn (it.name)
+    }
+}
+```
+
+[Mirar Declaracion (Pag. 45)](../kotlin.pdf)
+
+**Bloque init**
+
+Es un bloque de código que se ejecuta al momento de crear una instancia de la clase.
+
+```kotlin
+class Persona ( var name : String, var age : Int ){ 
+    init {
+        println("Se ha creado una nueva persona con el nombre $name y la edad $age")
+    }
+}
+```
+
+Cada vez que se crea un objeto persona se ejecuta el bloque init.
+
