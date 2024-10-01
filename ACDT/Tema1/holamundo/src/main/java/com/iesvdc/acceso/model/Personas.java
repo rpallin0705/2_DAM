@@ -1,4 +1,4 @@
-package com.iesvdc.acceso;
+package com.iesvdc.acceso.model;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,18 +10,36 @@ import java.util.Random;
 
 import com.iesvdc.acceso.error.DniException;
 import com.iesvdc.acceso.error.LoadDataException;
-import com.iesvdc.acceso.model.Persona;
-import com.iesvdc.acceso.model.Sexo;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlTransient;
 
 /**
  * Clase general para cargar archivos de texto con nombres y apellidos
  * y generar aleatoriamente listas de personas
  */
-public class GeneradorPersonas {
+// Se añaden las anotaciones para que el serializador sepa como tratar la clase
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Personas {
+
+    private List<Persona> personas;
+
+    // Se añade la anotación para que el serializador no incluya el atributo en el XML
+    @XmlTransient
     private List<String> listaNombresHombres;
+    @XmlTransient
     private List<String> listaNombresMujeres;
+    @XmlTransient
     private List<String> listaApellidos;
+    @XmlTransient
     private static final Random random = new Random();
+
+    public Personas() {
+        this.personas = new ArrayList<>();
+    }
 
     /**
      * Configuración inicial para indicar donde están los archivos de texto
@@ -75,8 +93,10 @@ public class GeneradorPersonas {
     }
 
     /**
-     * Genera un email para la persona cogiendo la primera letra del nombre y los apellidos 
+     * Genera un email para la persona cogiendo la primera letra del nombre y los
+     * apellidos
      * pasado a minúsculas, sin espacios y sin acentos.
+     * 
      * @param La persona a la que se le genera el email
      * @return El email generado
      */
@@ -107,7 +127,6 @@ public class GeneradorPersonas {
     Persona getRandomPersona() {
         Persona persona = new Persona();
 
-        
         persona.setApellidos(getRandomString(listaApellidos) + " " + getRandomString(listaApellidos));
 
         persona.setSexo(getRandomSexo());
@@ -173,7 +192,7 @@ public class GeneradorPersonas {
      * @param numPersonas número de personas a generar
      * @return lista de personas aleatorias
      */
-    public List<Persona> generarPersonas(int numPersonas) throws LoadDataException {
+    public void generarPersonas(int numPersonas) throws LoadDataException {
         List<Persona> listaPersonas = new ArrayList<>();
         if (this.listaApellidos == null ||
                 this.listaNombresHombres == null ||
@@ -181,10 +200,9 @@ public class GeneradorPersonas {
             throw new LoadDataException("Error: no se han cargado los archivos con los datos de personas");
         } else {
             for (int i = 0; i < numPersonas; i++) {
-                listaPersonas.add(getRandomPersona());
+                this.personas.add(getRandomPersona());
             }
         }
-        return listaPersonas;
     }
 
     /**
@@ -207,5 +225,9 @@ public class GeneradorPersonas {
         // Pasamos el numero aleatorio a localDate
         return LocalDate.ofEpochDay(randomDate + startingDateUnix);
 
+    }
+
+    public List<Persona> getPersonas() {
+        return this.personas;
     }
 }

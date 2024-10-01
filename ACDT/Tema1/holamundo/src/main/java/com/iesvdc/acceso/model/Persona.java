@@ -1,6 +1,8 @@
 package com.iesvdc.acceso.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Persona {
@@ -11,11 +13,14 @@ public class Persona {
     private char letraDNI;
     private LocalDate fechaNacimiento;
     private Sexo sexo;
+    private List<Direccion> direcciones;
 
     public Persona() {
+        this.direcciones = new ArrayList<>();
     }
 
-    public Persona(String nombre, String apellidos, String email, int numeroDNI, char letraDNI, LocalDate fechaNacimiento, Sexo sexo) {
+    public Persona(String nombre, String apellidos, String email, int numeroDNI, char letraDNI,
+            LocalDate fechaNacimiento, Sexo sexo) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.email = email;
@@ -23,8 +28,24 @@ public class Persona {
         this.letraDNI = letraDNI;
         this.fechaNacimiento = fechaNacimiento;
         this.sexo = sexo;
-    } 
+        this.direcciones = new ArrayList<>();
+    }
 
+    private List<Direccion> getDirecciones() {
+        return this.direcciones;
+    }
+
+    public void setDirecciones(List<Direccion> direcciones) {
+        this.direcciones = direcciones;
+    }
+
+    public void addDireccion(Direccion direccion) {
+        this.direcciones.add(direccion);
+    }
+
+    public void removeDireccion(Direccion direccion) {
+        this.direcciones.removeIf(d -> d.equals(direccion));
+    }
 
     public Sexo getSexo() {
         return this.sexo;
@@ -133,21 +154,20 @@ public class Persona {
     @Override
     public String toString() {
         return String.format(
-            "{\"nombre\":\"%s\"," +
-            "\"apellidos\":\"%s\"," +
-            "\"sexo\":\"%s\"," +
-            "\"email\":\"%s\"," +
-            "\"numeroDNI\":\"%d\"," +
-            "\"letraDNI\":\"%c\"," +
-            "\"fechaNacimiento\":\"%s\"}",
-            getNombre(),
-            getApellidos(),
-            getSexo(),
-            getEmail(),
-            getNumeroDNI(),
-            getLetraDNI(),
-            getFechaNacimiento()
-        );
+                "{\"nombre\":\"%s\"," +
+                        "\"apellidos\":\"%s\"," +
+                        "\"sexo\":\"%s\"," +
+                        "\"email\":\"%s\"," +
+                        "\"numeroDNI\":\"%d\"," +
+                        "\"letraDNI\":\"%c\"," +
+                        "\"fechaNacimiento\":\"%s\"}",
+                getNombre(),
+                getApellidos(),
+                getSexo(),
+                getEmail(),
+                getNumeroDNI(),
+                getLetraDNI(),
+                getFechaNacimiento());
     }
 
 }

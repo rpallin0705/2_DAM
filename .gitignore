@@ -1,2 +1,7 @@
 FICHA_RAPL.ods
 temario
+
+.vscode
+target
+*.class
+*.data

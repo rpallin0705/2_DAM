@@ -1,19 +1,23 @@
 package com.iesvdc.acceso;
 
+import com.iesvdc.acceso.error.LoadDataException;
+import com.iesvdc.acceso.model.Personas;
+
 /**
  * Hello world!
  */
 public class App {
     public static void main(String[] args) {
-        GeneradorPersonas gPersonas = new GeneradorPersonas();
+        Personas gPersonas = new Personas();
         gPersonas.loadData(
                 "datos\\nombres-mujer.txt",
                 "datos\\nombres-hombre.txt",
                 "datos\\apellidos.txt");
 
         try {
-            System.out.println(gPersonas.generarPersonas(10).toString());
-        } catch (Exception e) {
+            gPersonas.generarPersonas(100);
+            System.out.println(gPersonas.getPersonas().toString());
+        } catch (LoadDataException e) {
             System.err.println(e.getMessage());
         }
 
