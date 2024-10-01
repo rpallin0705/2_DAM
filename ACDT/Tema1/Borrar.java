@@ -33,7 +33,7 @@ public class Borrar {
      * @param archivosEncontrados Lista de los archivos encontrados
      * @throws IOException
      */
-    private static void eliminarArchivos(List<File> archivosEncontrados) throws IOException {
+    private static void eliminarArchivos(List<File> archivosEncontrados) {
         if (archivosEncontrados.isEmpty()) {
             System.out.println("No se han encontrado archivos. Saliendo...");
 
