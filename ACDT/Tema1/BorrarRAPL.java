@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Borrar {
+public class BorrarRAPL {
 
     public static void main(String[] args) {
         if (args.length != 4) {
