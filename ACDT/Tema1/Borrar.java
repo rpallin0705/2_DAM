@@ -1,114 +1,126 @@
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Scanner;
 
 public class Borrar {
 
-    public static void main(String []args){
-        if (args.length!=4) {
+    public static void main(String[] args) {
+        if (args.length != 4) {
             usage();
+        } else if (checkArgs(args)) {
+
+            try {
+
+                List<File> archivosEncontrados = encontrarArchivos(args);
+
+                eliminarArchivos(archivosEncontrados);
+
+            } catch (Exception ioe) {
+                System.out.println("Error: " + ioe.getMessage());
+            }
+
         } else {
-            if(args[0].equals("-f") && (args[2].equals("-n") || args[2].equals("-e"))){
-                File carpetaContenedora = new File(args[1]);
-                // System.out.println("Archivos borrados: " + encontrarArchivos(carpetaContenedora, args));
-                List<String> archivosEncontrados = buscarArchivos(carpetaContenedora, args);
-                System.out.println("Estos son los archivos encontrados: ");
-                for (int i = 0; i < archivosEncontrados.size(); i++) {
-                    System.out.println(i + ". Archivo borrado: " + archivosEncontrados.get(i));
-                }
+            usage();
+        }
 
-                if (elegirOpcion(archivosEncontrados.size()) == 1) {
-                    System.out.println("Archivo borrado: " + archivosEncontrados.get(elegirOpcion(archivosEncontrados.size()) - 1));
-                } else if (elegirOpcion(archivosEncontrados.size()) == 2) {
-                    for (String archivo : archivosEncontrados) {
-                        File archivoBorrado = new File(archivo);
-                        archivoBorrado.delete();
-                    }
-                } else if (elegirOpcion(archivosEncontrados.size()) == 3) {
-                    System.out.println("Saliendo...");
-                }
+    }
 
-            } else {
-                usage();
+    /**
+     * Método que elimina los archivos encontrados
+     * 
+     * @param archivosEncontrados Lista de los archivos encontrados
+     * @throws IOException
+     */
+    private static void eliminarArchivos(List<File> archivosEncontrados) throws IOException {
+        if (archivosEncontrados.isEmpty()) {
+            System.out.println("No se han encontrado archivos. Saliendo...");
+
+        } else if (getOpcion()) {
+            int archivosEliminados = 0;
+            for (File archivo : archivosEncontrados) {
+                if (archivo.delete())
+                    archivosEliminados++;
             }
+            System.out.println("Archivos borrados correctamente. Número de archivos borrados: "
+                    + archivosEliminados);
+
+        } else {
+            System.out.println("No se han borrado los archivos. Saliendo...");
         }
     }
 
-    private static Boolean encontrarArchivos(File carpetaContenedora, String[] argumentos){
-        File[] contenidoCarpeta = carpetaContenedora.listFiles();
-        Boolean encontrado = false;
+    /**
+     * Método que obtiene la opción del usuario para borrar los archivos encontrados
+     * 
+     * @param archivosEncontrados Lissta de los archivos encontrados
+     * @return Indica true si el usuario desea borrar los archivos y false en caso
+     *         contrario
+     * @throws NumberFormatException
+     */
+    private static boolean getOpcion() {
+        Scanner sc = new Scanner(System.in);
+        int opcion = -1;
 
-        for (File archivoBuscado : contenidoCarpeta) {
-            if (archivoBuscado.isFile() && (archivoBuscado.getName().equals(argumentos[3]) || archivoBuscado.getName().endsWith('.' + argumentos[3]))) {
-                System.out.println("Archivo borrado: " + archivoBuscado.getAbsolutePath());
-                archivoBuscado.delete();
-                encontrado = true;
-            } else if (archivoBuscado.isDirectory()) {
-                encontrarArchivos(archivoBuscado, argumentos);
+        do {
+            System.out.println("¿Desea borrar los archivos encontrados? (Sí -> 1 / No -> 0)");
+            try {
+                opcion = Integer.parseInt(sc.nextLine().trim());
+            } catch (NumberFormatException e) {
+                System.err.println("Entrada no válida. Por favor, ingrese 1 para Sí o 0 para No.");
             }
-        }
+        } while (opcion != 1 && opcion != 0);
 
-        return encontrado;
+        sc.close();
+        return opcion == 1;
     }
 
-    private static List<String> buscarArchivos(File carpetaContenedora, String[] argumentos){
+    /**
+     * Método que comprueba los argumentos de entrada
+     * 
+     * @param args Argumentos de entrada
+     * @return Devuelve true si los argumentos son correctos y false en caso
+     *         contrario
+     */
+    private static boolean checkArgs(String[] args) {
+        return args[0].equals("-f") && (args[2].equals("-n") || args[2].equals("-e"));
+    }
+
+    /**
+     * Método que encuentra los archivos en la carpeta especificada
+     * 
+     * @param argumentos Argumentos de entrada
+     * @return Devuelve una lista de los archivos encontrados
+     */
+    private static List<File> encontrarArchivos(String[] argumentos) {
+        File carpetaContenedora = new File(argumentos[1]);
         File[] contenidoCarpeta = carpetaContenedora.listFiles();
-        List<String> archivosEncontrados = new ArrayList<>();
+        List<File> archivosEncontrados = new ArrayList<>();
 
         for (File archivoBuscado : contenidoCarpeta) {
-            if (archivoBuscado.isFile() && (archivoBuscado.getName().equals(argumentos[3]) || archivoBuscado.getName().endsWith('.' + argumentos[3]))) {
-                archivosEncontrados.add(archivoBuscado.getAbsolutePath());
+            if (archivoBuscado.isFile() && (archivoBuscado.getName().equals(argumentos[3])
+                    || archivoBuscado.getName().endsWith('.' + argumentos[3]))) {
+                System.out.println("Archivo encontrado: " + archivoBuscado.getAbsolutePath());
+                archivosEncontrados.add(archivoBuscado);
             } else if (archivoBuscado.isDirectory()) {
-                archivosEncontrados.addAll(buscarArchivos(archivoBuscado, argumentos));
+                archivosEncontrados.addAll(encontrarArchivos(argumentos));
             }
         }
 
         return archivosEncontrados;
     }
 
-    public static int elegirOpcion(int numArchivos){
-        System.out.println("=================================================");
-        System.out.println("Acciones disponibles: ");
-        System.out.println("1. Borrar archivo");
-        System.out.println("2. Borrar todos los archivos");
-        System.out.println("3. Salir");
-        System.out.println("Elige una opción: ");
-        int opcion = Integer.parseInt(System.console().readLine());
-        switch (opcion) {
-            case 1:
-                elegirArchivoABorrar(numArchivos);
-                break;
-            case 2:
-                System.out.println("Todos los archivos borrados");
-                break;
-            case 3:
-                System.out.println("Saliendo...");
-                break;
-            default:
-                System.out.println("Opción no válida");
-                break;
-        }
-
-        return opcion;
-    }
-
-
-    private static int elegirArchivoABorrar(int numArchivos) {
-        System.out.println("Elige un archivo a borrar: ");
-        int indexArchivo = Integer.parseInt(System.console().readLine());
-        if (indexArchivo < 0 || indexArchivo >= numArchivos) {
-            System.out.println("Opción no válida");
-            return elegirArchivoABorrar(numArchivos);
-        }
-        return indexArchivo;
-    }
-
-    private static void usage(){
+    /**
+     * Método que muestra el uso del programa
+     */
+    private static void usage() {
         System.out.println("Uso del programa:");
         System.out.println("java Borrar -f carpeta " +
-            "[-n nombre_archivo | -e extension]");
+                "[-n nombre_archivo | -e extension]");
+        System.out.println("Ejemplo de uso:");
+        System.out.println("java .\\Borrar.java -f .\\prueba\\ -n archivo.java");
+        System.out.println("java .\\Borrar.java -f .\\prueba\\ -e java");
     }
 
-   
 }
