@@ -4,13 +4,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import com.iesvdc.acceso.error.DniException;
+import com.iesvdc.acceso.error.LoadDataException;
 import com.iesvdc.acceso.model.Persona;
 import com.iesvdc.acceso.model.Sexo;
 
@@ -22,6 +21,7 @@ public class GeneradorPersonas {
     private List<String> listaNombresHombres;
     private List<String> listaNombresMujeres;
     private List<String> listaApellidos;
+    private static final Random random = new Random();
 
     /**
      * Configuración inicial para indicar donde están los archivos de texto
@@ -62,7 +62,7 @@ public class GeneradorPersonas {
      * @return Int aleatorio 0...max-1
      */
     private static int generateRandomInt(int max) {
-        return new Random().nextInt(max);
+        return random.nextInt(max);
     }
 
     /**
@@ -75,17 +75,15 @@ public class GeneradorPersonas {
     }
 
     /**
-     * Genera un email para la persona cogiendo la primera letra del nombre y los
-     * dos apellidos,
-     * pasado todo a minúsculas, sin espacios y sin acentos.
-     * 
+     * Genera un email para la persona cogiendo la primera letra del nombre y los apellidos 
+     * pasado a minúsculas, sin espacios y sin acentos.
      * @param La persona a la que se le genera el email
      * @return El email generado
      */
     private String getEmail(Persona persona) {
         String caracteresNoPermitidos = ".*[áéíóúñç].*";
         String email = (persona.getNombre().trim().charAt(0) +
-                persona.getApellidos().trim()).replaceAll(" ", "")
+                persona.getApellidos().trim()).replace(" ", "")
                 .toLowerCase();
 
         if (email.matches(caracteresNoPermitidos)) {
@@ -109,6 +107,7 @@ public class GeneradorPersonas {
     Persona getRandomPersona() {
         Persona persona = new Persona();
 
+        
         persona.setApellidos(getRandomString(listaApellidos) + " " + getRandomString(listaApellidos));
 
         persona.setSexo(getRandomSexo());
@@ -151,8 +150,7 @@ public class GeneradorPersonas {
      * @return Un numero de DNI aleatorio
      */
     private int getRandomDNINumber() {
-        // TODO Auto-generated method stub
-        return new Random().nextInt(10000000, 100000000);
+        return random.nextInt(10000000, 100000000);
     }
 
     /**
@@ -175,12 +173,12 @@ public class GeneradorPersonas {
      * @param numPersonas número de personas a generar
      * @return lista de personas aleatorias
      */
-    public List<Persona> generarPersonas(int numPersonas) throws Exception {
+    public List<Persona> generarPersonas(int numPersonas) throws LoadDataException {
         List<Persona> listaPersonas = new ArrayList<>();
         if (this.listaApellidos == null ||
                 this.listaNombresHombres == null ||
                 this.listaNombresMujeres == null) {
-            throw new Exception("Error: no se han cargado los archivos con los datos de personas");
+            throw new LoadDataException("Error: no se han cargado los archivos con los datos de personas");
         } else {
             for (int i = 0; i < numPersonas; i++) {
                 listaPersonas.add(getRandomPersona());
@@ -205,7 +203,7 @@ public class GeneradorPersonas {
         Long endingDateUnix = endingDate.toEpochDay();
         // Restamos endingDate - startingDate y generamos un número aleatorio entre 0 y
         // la diferencia de las fechas.
-        Long randomDate = new Random().nextLong(endingDateUnix - startingDateUnix);
+        Long randomDate = random.nextLong(endingDateUnix - startingDateUnix);
         // Pasamos el numero aleatorio a localDate
         return LocalDate.ofEpochDay(randomDate + startingDateUnix);
 
