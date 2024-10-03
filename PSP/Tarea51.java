@@ -1,14 +1,12 @@
 import java.io.IOException;
 
-public class Tarea5 {
+public class Tarea51 {
     public static void main(String[] args) {
         try {
             getPMspaint();
         } catch (IOException | InterruptedException e) {
-            /**
-             * Para finalizar el hilo de ejecución y evitar perder información que indica
-             * que el hilo ha sido interrumpido
-             */
+            
+            // Para finalizar el hilo de ejecución y evitar perder información sobre la interrupción del hilo
             Thread.currentThread().interrupt();
         }
 
