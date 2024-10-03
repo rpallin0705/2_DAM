@@ -2,11 +2,23 @@ package com.iesvdc.acceso.model;
 
 import java.util.Objects;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Direccion {
+    @XmlAttribute
     private long idDireccion;
+    @XmlAttribute
     private String nombreVia;
+    @XmlAttribute
     private TipoVia tipoVia;
+    @XmlAttribute
     private int numero;
+    @XmlAttribute
     private String detalle;
 
     public Direccion() {

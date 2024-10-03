@@ -5,17 +5,32 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Persona {
+    @XmlElement(required = true)
     private String nombre;
+    @XmlElement(required = true)
     private String apellidos;
+    @XmlElement(required = true)
     private String email;
+    @XmlElement(required = true)
     private int numeroDNI;
+    @XmlElement(required = true)
     private char letraDNI;
+    @XmlElement(required = true)
     private LocalDate fechaNacimiento;
+    @XmlElement(required = true)
     private Sexo sexo;
+    @XmlElement(required = true)
     private List<Direccion> direcciones;
 
-    public Persona() {
+    public Persona() { 
         this.direcciones = new ArrayList<>();
     }
 

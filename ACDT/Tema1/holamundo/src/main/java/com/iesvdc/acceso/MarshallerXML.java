@@ -2,9 +2,6 @@ package com.iesvdc.acceso;
 
 import java.io.File;
 
-import org.eclipse.persistence.jaxb.MarshallerProperties;
-import org.eclipse.persistence.jaxb.UnmarshallerProperties;
-
 import com.iesvdc.acceso.error.LoadDataException;
 import com.iesvdc.acceso.model.Personas;
 
@@ -12,8 +9,8 @@ import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
 
-public class MarshallerJson {
-    public static void main(String[] args) {
+public class MarshallerXML {
+     public static void main(String[] args) {
         Personas gPersonas = new Personas();
         gPersonas.loadData(
                 "datos\\nombres-mujer.txt",
@@ -26,15 +23,12 @@ public class MarshallerJson {
             JAXBContext jbcd = JAXBContext.newInstance(gPersonas.getClass());
             // Creamos un marshaller y le indicamos el formato de salida
             Marshaller marshaller = jbcd.createMarshaller();
-            marshaller.setProperty(UnmarshallerProperties.JSON_INCLUDE_ROOT, true);
-            marshaller.setProperty(MarshallerProperties.MEDIA_TYPE, "application/json");
-
+            
             // Creado del fichero con los datos
-            marshaller.marshal(gPersonas, new File("datos\\personas.json"));
+            marshaller.marshal(gPersonas, new File("datos\\personas.xml"));
 
         } catch (LoadDataException | JAXBException e) {
             System.err.println(e.getMessage());
         }
     }
 }
- 

@@ -16,7 +16,7 @@ public class App {
 
         try {
             gPersonas.generarPersonas(100);
-            System.out.println(gPersonas.getPersonas().toString());
+            System.out.println(gPersonas.getListaPersonas().toString());
         } catch (LoadDataException e) {
             System.err.println(e.getMessage());
         }

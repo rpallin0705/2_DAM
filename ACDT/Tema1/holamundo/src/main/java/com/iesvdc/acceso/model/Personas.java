@@ -25,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlTransient;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Personas {
 
-    private List<Persona> personas;
+    private List<Persona> listaPersonas;
 
     // Se añade la anotación para que el serializador no incluya el atributo en el XML
     @XmlTransient
@@ -38,7 +38,7 @@ public class Personas {
     private static final Random random = new Random();
 
     public Personas() {
-        this.personas = new ArrayList<>();
+        this.listaPersonas = new ArrayList<>();
     }
 
     /**
@@ -200,7 +200,7 @@ public class Personas {
             throw new LoadDataException("Error: no se han cargado los archivos con los datos de personas");
         } else {
             for (int i = 0; i < numPersonas; i++) {
-                this.personas.add(getRandomPersona());
+                this.listaPersonas.add(getRandomPersona());
             }
         }
     }
@@ -227,7 +227,15 @@ public class Personas {
 
     }
 
-    public List<Persona> getPersonas() {
-        return this.personas;
+    public List<Persona> getListaPersonas() {
+        return this.listaPersonas;
     }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " listaPersonas='" + getListaPersonas() + "'" + "}";
+    }
+
 }

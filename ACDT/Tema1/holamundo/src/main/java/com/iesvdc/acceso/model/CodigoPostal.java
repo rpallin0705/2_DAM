@@ -1,12 +1,18 @@
 package com.iesvdc.acceso.model;
 import java.util.Objects;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class CodigoPostal {
     private int cp;
     private String localidad;
     private String provincia;
 
-
+    
     public CodigoPostal() {
     }
 

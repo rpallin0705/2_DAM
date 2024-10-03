@@ -31,9 +31,24 @@
   <dependencies>
 
     <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>jaxb2-maven-plugin</artifactId>
+      <version>3.2.0</version>
+      <type>maven-plugin</type>
+    </dependency>
+
+
+    <dependency>
+      <groupId>jaxb</groupId>
+      <artifactId>activation</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+
+    <dependency>
       <groupId>org.eclipse.persistence</groupId>
       <artifactId>org.eclipse.persistence.moxy</artifactId>
-      <version>5.0.0-B03</version>
+      <version>4.0.4</version>
     </dependency>
 
 
