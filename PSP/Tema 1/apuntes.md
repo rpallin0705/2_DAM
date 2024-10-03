@@ -45,3 +45,9 @@ br.close();
 Para crear procesos vamos a utilizar la clase `ProcessBuilder`. En el constructor de la clase se le pasa el comando en forma de argumentos **(array de strings).**
 
 Para devolver un objeto Process se utiliza el comando ```proceso.start()```
+
+## Jueves 3 de octubre
+
+`p.isLive()` -> Comprueba que el proceso esté vivo
+`p.waitFor()` -> Espera a que el proceso termine para seguir la ejecución
+`p.waitFor(MAX_TIEMPO_EJECUCION, **TimeInit.MILISECONDS**)` -> Espera a que el proceso termine para seguir la ejecución con un lñimite de tiempo. Se le pasa el tiempo máximo a esperar y la unidad de tiempo
