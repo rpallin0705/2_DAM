@@ -1,4 +1,4 @@
-import java.io.File;
+import java.io.File.delete;
 
 public class BorrarMascotas {
     public static void main(String[] args) {
