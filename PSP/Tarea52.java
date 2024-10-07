@@ -18,7 +18,7 @@ public class Tarea52 {
             usage();
 
         try {
-            String[] comando = { "cmd.exe", "/c", "dir","/a", "C:\\" + args[0] };
+            String[] comando = { "cmd.exe", "/c", "dir", "/a", "C:\\" + args[0] };
 
             Process pDirectorios = Runtime.getRuntime().exec(comando);
 
@@ -31,13 +31,15 @@ public class Tarea52 {
             while ((aux = brDirectorios.readLine()) != null) {
                 System.out.println(aux);
                 aux = brDirectorios.readLine();
+                System.out.println(aux);
             }
 
             pDirectorios.waitFor();
 
         } catch (IOException e) {
             System.out.println("Saliendo del programa...");
-        } catch(InterruptedException e) {
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
             System.out.println("El proceso se interrumpió");
         }
     }
@@ -45,7 +47,7 @@ public class Tarea52 {
     public static void usage() {
         System.out.println("Uso del programa:");
         System.out.println("java Tarea51 <Directorio> \"Tiene que estar dentro del disco c:\"");
-        System.out.println("java Tarea52 \\usuarios\tarde");
+        System.out.println("java Tarea52 \\usuarios\\tarde");
 
         System.exit(1);
     }

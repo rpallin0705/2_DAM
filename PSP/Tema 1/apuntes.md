@@ -51,3 +51,51 @@ Para devolver un objeto Process se utiliza el comando ```proceso.start()```
 `p.isLive()` -> Comprueba que el proceso esté vivo
 `p.waitFor()` -> Espera a que el proceso termine para seguir la ejecución
 `p.waitFor(MAX_TIEMPO_EJECUCION, **TimeInit.MILISECONDS**)` -> Espera a que el proceso termine para seguir la ejecución con un lñimite de tiempo. Se le pasa el tiempo máximo a esperar y la unidad de tiempo
+
+## Lunes 7 de septiembre
+
+**Ejercicio nslookup**
+`Página 34 pdf procesos en java`
+```Java
+public class outputStream {
+    public static void main(String[] args) {
+        ProcessBuilder pb = new ProcessBuilder("nslookup");
+        pb.redirectOutput(ProcessBuilder.Redirect.INHERIT);
+        try {
+          // Para leer caracter por caracter
+            InputStreamReader isstdin = new InputStreamReader(System.in, "UTF-8");
+          // Para leer linea por linea
+            BufferedReader brstdin = new BufferedReader(isstdin);
+
+            String linea;
+            System.out.println("Introducir nombre del dominio:");
+            while ((linea = brstdin.readLine()) != null && linea.length() != 0) {
+              // Se inicia el proceso padre
+                Process p = pb.start();
+                try {
+                  // Para obtener la salida de p
+                    OutputStream osp = p.getOutputStream();
+                  // Para mandar a nslookup caracteres codificados en UTF8  (los dominios)
+                    OutputStreamWriter oswp = new OutputStreamWriter(osp, "UTF-8");
+                  // Se puede utilizar un PrintWriter, esto omite la linea anterior porque ya va formateado
+                    oswp.write(linea);
+                    oswp.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    p.waitFor();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+            System.out.println("Introduce nombre de dominio: ");
+        } catch (IOException e) {
+            System.out.println("Error de E/S");
+            e.printStackTrace();
+        }
+    }
+}
+
+
+```
