@@ -23,9 +23,11 @@ println("La longitud del nombre es: $longitudNombre")
 
 `nombre?` -> comprueba si nombre es null.
 
-`?:` -> operador Elvis.
+`?:` -> Proporciona un valor predeterminado si una expresión es null.
 
 `0` -> valor de retorno si nombre es null.
+
+`Operador de Acceso Seguro (?.)` ->  Accede a métodos y propiedades solo si la variable no es null.
 
 #### **Operador de afirmacion de no nullidad (!!)**
 
