@@ -47,6 +47,7 @@ public class Tarea52 {
         System.out.println("Uso del programa:");
         System.out.println("java Tarea51 <Directorio> \"Tiene que estar dentro del disco c:\"");
         System.out.println("java Tarea52 \\usuarios\\tarde");
+        System.out.println("java Tarea52 \\usuarios\\tarde");
 
         System.exit(1);
     }
