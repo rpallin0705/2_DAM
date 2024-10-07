@@ -13,9 +13,9 @@ import jakarta.xml.bind.Unmarshaller;
 public class UnMarshallerJson {
     public static void main(String[] args) {
         Personas lPersonas = new Personas();
-
+        System.setProperty("javax.xml.bind.JAXBContextFactory", "org.eclipse.persistence.jaxb.JAXBContextFactory");
         try {
-            System.setProperty("javax.xml.bind.JAXBContextFactory", "org.eclipse.persistence.jaxb.JAXBContextFactory");
+           
 
             JAXBContext jaxbContext = JAXBContext.newInstance(lPersonas.getClass());
 
