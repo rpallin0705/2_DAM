@@ -23,5 +23,5 @@ public List<Producto> obtenerProductos() {
     }
 ```
 
-`Conectores` -> una librería del lenguaje para facilitar la conexion a la base de datos, p.ej: jdbc:driver:host:puerto/basededatos
+`Conectores` -> una librería del lenguaje para facilitar la conexion a la base de datos, p.ej: `jdbc:driver:host:puerto/basededatos`
 
