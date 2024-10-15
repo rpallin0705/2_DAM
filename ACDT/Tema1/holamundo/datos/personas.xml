@@ -1,1 +1,903 @@
-<?xml version="1.0" encoding="UTF-8"?><personas><listaPersonas><nombre>JOSE MIGUEL</nombre><apellidos>HERRERA LEON</apellidos><email>jherreraleon@iesvdc.com</email><numeroDNI>49941847</numeroDNI><letraDNI>S</letraDNI><fechaNacimiento>2005-09-18</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JOSE</nombre><apellidos>SILVA SANZ</apellidos><email>jsilvasanz@iesvdc.com</email><numeroDNI>63485755</numeroDNI><letraDNI>M</letraDNI><fechaNacimiento>1956-07-12</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JUAN JOSE</nombre><apellidos>GIL VELASCO</apellidos><email>jgilvelasco@iesvdc.com</email><numeroDNI>60846902</numeroDNI><letraDNI>B</letraDNI><fechaNacimiento>1998-05-30</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JOAQUIN</nombre><apellidos>VIDAL DURAN</apellidos><email>jvidalduran@iesvdc.com</email><numeroDNI>12579825</numeroDNI><letraDNI>K</letraDNI><fechaNacimiento>1928-11-12</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>MANUEL</nombre><apellidos>VIDAL ORTEGA</apellidos><email>mvidalortega@iesvdc.com</email><numeroDNI>56545276</numeroDNI><letraDNI>Y</letraDNI><fechaNacimiento>1933-05-12</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JORGE</nombre><apellidos>GOMEZ FUENTES</apellidos><email>jgomezfuentes@iesvdc.com</email><numeroDNI>87485970</numeroDNI><letraDNI>L</letraDNI><fechaNacimiento>1978-01-27</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JESUS</nombre><apellidos>HERRERO TORRES</apellidos><email>jherrerotorres@iesvdc.com</email><numeroDNI>13519441</numeroDNI><letraDNI>H</letraDNI><fechaNacimiento>1983-03-29</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>IVAN</nombre><apellidos>TORRES RAMOS</apellidos><email>itorresramos@iesvdc.com</email><numeroDNI>81469374</numeroDNI><letraDNI>Q</letraDNI><fechaNacimiento>1929-08-31</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>ANGEL</nombre><apellidos>SANTOS RUIZ</apellidos><email>asantosruiz@iesvdc.com</email><numeroDNI>43775523</numeroDNI><letraDNI>Z</letraDNI><fechaNacimiento>1951-04-18</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JORGE</nombre><apellidos>GOMEZ BRAVO</apellidos><email>jgomezbravo@iesvdc.com</email><numeroDNI>74595846</numeroDNI><letraDNI>S</letraDNI><fechaNacimiento>1922-05-04</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>IGNACIO</nombre><apellidos>LOZANO SANCHEZ</apellidos><email>ilozanosanchez@iesvdc.com</email><numeroDNI>14670871</numeroDNI><letraDNI>E</letraDNI><fechaNacimiento>1978-12-16</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>PAU</nombre><apellidos>ALVAREZ DIAZ</apellidos><email>palvarezdiaz@iesvdc.com</email><numeroDNI>47058530</numeroDNI><letraDNI>R</letraDNI><fechaNacimiento>1973-04-27</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JOAN</nombre><apellidos>HIDALGO VARGAS</apellidos><email>jhidalgovargas@iesvdc.com</email><numeroDNI>97417957</numeroDNI><letraDNI>P</letraDNI><fechaNacimiento>1990-01-11</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JOSE ANGEL</nombre><apellidos>MARTINEZ GONZALEZ</apellidos><email>jmartinezgonzalez@iesvdc.com</email><numeroDNI>56772945</numeroDNI><letraDNI>K</letraDNI><fechaNacimiento>1951-08-24</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>DIEGO</nombre><apellidos>DURAN SANZ</apellidos><email>dduransanz@iesvdc.com</email><numeroDNI>76392774</numeroDNI><letraDNI>E</letraDNI><fechaNacimiento>2012-12-05</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JOSE MANUEL</nombre><apellidos>FERNANDEZ MARTINEZ</apellidos><email>jfernandezmartinez@iesvdc.com</email><numeroDNI>58930569</numeroDNI><letraDNI>S</letraDNI><fechaNacimiento>2014-11-06</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JAVIER</nombre><apellidos>CARRASCO DELGADO</apellidos><email>jcarrascodelgado@iesvdc.com</email><numeroDNI>86813239</numeroDNI><letraDNI>S</letraDNI><fechaNacimiento>1945-12-03</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>ALBERT</nombre><apellidos>RAMIREZ GUERRERO</apellidos><email>aramirezguerrero@iesvdc.com</email><numeroDNI>54182573</numeroDNI><letraDNI>R</letraDNI><fechaNacimiento>1995-01-11</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>AGUSTIN</nombre><apellidos>SILVA BENITEZ</apellidos><email>asilvabenitez@iesvdc.com</email><numeroDNI>14120693</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1969-03-20</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JOAQUIN</nombre><apellidos>CANO CORTES</apellidos><email>jcanocortes@iesvdc.com</email><numeroDNI>92913633</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1959-05-24</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JOSEP</nombre><apellidos>ALONSO FLORES</apellidos><email>jalonsoflores@iesvdc.com</email><numeroDNI>70285135</numeroDNI><letraDNI>X</letraDNI><fechaNacimiento>1991-08-18</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>MOHAMED</nombre><apellidos>RUIZ PRIETO</apellidos><email>mruizprieto@iesvdc.com</email><numeroDNI>27175634</numeroDNI><letraDNI>F</letraDNI><fechaNacimiento>1925-02-22</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JOSE LUIS</nombre><apellidos>HERRERA ROJAS</apellidos><email>jherrerarojas@iesvdc.com</email><numeroDNI>54031465</numeroDNI><letraDNI>A</letraDNI><fechaNacimiento>2011-04-16</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>ALVARO</nombre><apellidos>CAMPOS SANCHEZ</apellidos><email>acampossanchez@iesvdc.com</email><numeroDNI>77228733</numeroDNI><letraDNI>T</letraDNI><fechaNacimiento>2022-12-26</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JOSE RAMON</nombre><apellidos>SANZ VELASCO</apellidos><email>jsanzvelasco@iesvdc.com</email><numeroDNI>53021189</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1930-02-03</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JOSE MARIA</nombre><apellidos>CARMONA ORTEGA</apellidos><email>jcarmonaortega@iesvdc.com</email><numeroDNI>57108174</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1969-03-10</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JULIO</nombre><apellidos>ARIAS SERRANO</apellidos><email>jariasserrano@iesvdc.com</email><numeroDNI>23195641</numeroDNI><letraDNI>A</letraDNI><fechaNacimiento>1977-02-01</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>FELIX</nombre><apellidos>SANTOS REYES</apellidos><email>fsantosreyes@iesvdc.com</email><numeroDNI>69178850</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1922-01-03</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>MIGUEL ANGEL</nombre><apellidos>HERRERA MONTERO</apellidos><email>mherreramontero@iesvdc.com</email><numeroDNI>96262701</numeroDNI><letraDNI>L</letraDNI><fechaNacimiento>1947-06-04</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>IKER</nombre><apellidos>MOLINA HERRERA</apellidos><email>imolinaherrera@iesvdc.com</email><numeroDNI>25278689</numeroDNI><letraDNI>X</letraDNI><fechaNacimiento>1936-09-06</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>DAVID</nombre><apellidos>MORENO DOMINGUEZ</apellidos><email>dmorenodominguez@iesvdc.com</email><numeroDNI>51573527</numeroDNI><letraDNI>Y</letraDNI><fechaNacimiento>2015-08-01</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>TOMAS</nombre><apellidos>PARRA RAMOS</apellidos><email>tparraramos@iesvdc.com</email><numeroDNI>18005938</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>2011-09-08</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JAVIER</nombre><apellidos>PASTOR MUÑOZ</apellidos><email>jpastormunoz@iesvdc.com</email><numeroDNI>99465945</numeroDNI><letraDNI>F</letraDNI><fechaNacimiento>2011-05-08</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JUAN FRANCISCO</nombre><apellidos>VEGA IGLESIAS</apellidos><email>jvegaiglesias@iesvdc.com</email><numeroDNI>10912352</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1975-10-26</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>MIGUEL</nombre><apellidos>PEREZ PEÑA</apellidos><email>mperezpena@iesvdc.com</email><numeroDNI>59344258</numeroDNI><letraDNI>A</letraDNI><fechaNacimiento>2010-05-21</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JUAN ANTONIO</nombre><apellidos>DELGADO GUTIERREZ</apellidos><email>jdelgadogutierrez@iesvdc.com</email><numeroDNI>86873317</numeroDNI><letraDNI>V</letraDNI><fechaNacimiento>1946-06-11</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JOSE LUIS</nombre><apellidos>MONTERO CAMPOS</apellidos><email>jmonterocampos@iesvdc.com</email><numeroDNI>98083612</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>1937-01-23</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>MIGUEL</nombre><apellidos>SOTO DIAZ</apellidos><email>msotodiaz@iesvdc.com</email><numeroDNI>30983045</numeroDNI><letraDNI>K</letraDNI><fechaNacimiento>1984-11-02</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>FRANCISCO</nombre><apellidos>CASTRO SUAREZ</apellidos><email>fcastrosuarez@iesvdc.com</email><numeroDNI>46868839</numeroDNI><letraDNI>Z</letraDNI><fechaNacimiento>1978-06-24</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>CARLOS</nombre><apellidos>DELGADO FUENTES</apellidos><email>cdelgadofuentes@iesvdc.com</email><numeroDNI>89525148</numeroDNI><letraDNI>V</letraDNI><fechaNacimiento>1968-04-28</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>MARIANO</nombre><apellidos>NUÑEZ ARIAS</apellidos><email>mnunezarias@iesvdc.com</email><numeroDNI>64104203</numeroDNI><letraDNI>Y</letraDNI><fechaNacimiento>1969-03-10</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>FELIPE</nombre><apellidos>SANTANA GARCIA</apellidos><email>fsantanagarcia@iesvdc.com</email><numeroDNI>70800753</numeroDNI><letraDNI>Z</letraDNI><fechaNacimiento>2005-10-15</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JUAN ANTONIO</nombre><apellidos>REYES SANCHEZ</apellidos><email>jreyessanchez@iesvdc.com</email><numeroDNI>64908252</numeroDNI><letraDNI>K</letraDNI><fechaNacimiento>2018-07-26</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>IVAN</nombre><apellidos>DELGADO MARIN</apellidos><email>idelgadomarin@iesvdc.com</email><numeroDNI>75375056</numeroDNI><letraDNI>P</letraDNI><fechaNacimiento>1955-05-12</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JOSE LUIS</nombre><apellidos>CASTRO MOLINA</apellidos><email>jcastromolina@iesvdc.com</email><numeroDNI>68922194</numeroDNI><letraDNI>A</letraDNI><fechaNacimiento>1935-06-25</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>FERNANDO</nombre><apellidos>IGLESIAS MORALES</apellidos><email>figlesiasmorales@iesvdc.com</email><numeroDNI>73091682</numeroDNI><letraDNI>M</letraDNI><fechaNacimiento>1993-07-01</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>FRANCISCO</nombre><apellidos>LEON LEON</apellidos><email>fleonleon@iesvdc.com</email><numeroDNI>19160823</numeroDNI><letraDNI>Y</letraDNI><fechaNacimiento>1927-10-17</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>RODRIGO</nombre><apellidos>VIDAL MEDINA</apellidos><email>rvidalmedina@iesvdc.com</email><numeroDNI>17376926</numeroDNI><letraDNI>N</letraDNI><fechaNacimiento>1959-02-28</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>IKER</nombre><apellidos>CORTES MUÑOZ</apellidos><email>icortesmunoz@iesvdc.com</email><numeroDNI>36312801</numeroDNI><letraDNI>X</letraDNI><fechaNacimiento>2023-10-11</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>ANTONIO</nombre><apellidos>MOYA GUTIERREZ</apellidos><email>amoyagutierrez@iesvdc.com</email><numeroDNI>26100965</numeroDNI><letraDNI>J</letraDNI><fechaNacimiento>1994-11-11</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>FERNANDO</nombre><apellidos>LOPEZ ORTEGA</apellidos><email>flopezortega@iesvdc.com</email><numeroDNI>93999467</numeroDNI><letraDNI>P</letraDNI><fechaNacimiento>1962-05-31</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>GONZALO</nombre><apellidos>PRIETO NIETO</apellidos><email>gprietonieto@iesvdc.com</email><numeroDNI>23312804</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1994-11-19</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>FELIX</nombre><apellidos>DOMINGUEZ MOLINA</apellidos><email>fdominguezmolina@iesvdc.com</email><numeroDNI>69969414</numeroDNI><letraDNI>X</letraDNI><fechaNacimiento>1950-05-27</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>EMILIO</nombre><apellidos>DELGADO RAMIREZ</apellidos><email>edelgadoramirez@iesvdc.com</email><numeroDNI>63398957</numeroDNI><letraDNI>D</letraDNI><fechaNacimiento>1964-05-03</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>TOMAS</nombre><apellidos>CABALLERO GARCIA</apellidos><email>tcaballerogarcia@iesvdc.com</email><numeroDNI>98256355</numeroDNI><letraDNI>X</letraDNI><fechaNacimiento>1965-12-15</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>FELIX</nombre><apellidos>FUENTES HIDALGO</apellidos><email>ffuenteshidalgo@iesvdc.com</email><numeroDNI>78498268</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>2003-10-31</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>DIEGO</nombre><apellidos>HERNANDEZ MEDINA</apellidos><email>dhernandezmedina@iesvdc.com</email><numeroDNI>81085057</numeroDNI><letraDNI>Y</letraDNI><fechaNacimiento>1993-09-11</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>VICTOR MANUEL</nombre><apellidos>MEDINA SANTIAGO</apellidos><email>vmedinasantiago@iesvdc.com</email><numeroDNI>48416351</numeroDNI><letraDNI>V</letraDNI><fechaNacimiento>1998-04-06</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JOSE ANGEL</nombre><apellidos>GIMENEZ CARRASCO</apellidos><email>jgimenezcarrasco@iesvdc.com</email><numeroDNI>22512227</numeroDNI><letraDNI>B</letraDNI><fechaNacimiento>2023-10-27</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>HECTOR</nombre><apellidos>GONZALEZ NIETO</apellidos><email>hgonzaleznieto@iesvdc.com</email><numeroDNI>37521139</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>2010-06-21</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>MANUEL</nombre><apellidos>CASTILLO RAMIREZ</apellidos><email>mcastilloramirez@iesvdc.com</email><numeroDNI>65762408</numeroDNI><letraDNI>A</letraDNI><fechaNacimiento>2019-06-25</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JOSE IGNACIO</nombre><apellidos>PEREZ BRAVO</apellidos><email>jperezbravo@iesvdc.com</email><numeroDNI>96087150</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1933-05-23</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>JOSE IGNACIO</nombre><apellidos>SERRANO VIDAL</apellidos><email>jserranovidal@iesvdc.com</email><numeroDNI>90912113</numeroDNI><letraDNI>J</letraDNI><fechaNacimiento>1928-09-23</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>DOMINGO</nombre><apellidos>SERRANO GIL</apellidos><email>dserranogil@iesvdc.com</email><numeroDNI>47808092</numeroDNI><letraDNI>Q</letraDNI><fechaNacimiento>1947-03-31</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>MIGUEL</nombre><apellidos>VEGA GARCIA</apellidos><email>mvegagarcia@iesvdc.com</email><numeroDNI>52890520</numeroDNI><letraDNI>L</letraDNI><fechaNacimiento>2000-01-29</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JUAN ANTONIO</nombre><apellidos>BLANCO MOYA</apellidos><email>jblancomoya@iesvdc.com</email><numeroDNI>17885763</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>1944-02-19</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>IKER</nombre><apellidos>MOLINA MUÑOZ</apellidos><email>imolinamunoz@iesvdc.com</email><numeroDNI>10316922</numeroDNI><letraDNI>L</letraDNI><fechaNacimiento>1969-10-14</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>ENRIQUE</nombre><apellidos>SANZ CABRERA</apellidos><email>esanzcabrera@iesvdc.com</email><numeroDNI>60859810</numeroDNI><letraDNI>Q</letraDNI><fechaNacimiento>1944-01-23</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>RAFAEL</nombre><apellidos>IBAÑEZ ROMERO</apellidos><email>ribanezromero@iesvdc.com</email><numeroDNI>26954394</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1923-09-23</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>RAUL</nombre><apellidos>DIEZ PEREZ</apellidos><email>rdiezperez@iesvdc.com</email><numeroDNI>49222624</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1958-03-11</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>RUBEN</nombre><apellidos>GONZALEZ VAZQUEZ</apellidos><email>rgonzalezvazquez@iesvdc.com</email><numeroDNI>22524616</numeroDNI><letraDNI>A</letraDNI><fechaNacimiento>1990-10-30</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>VICTOR</nombre><apellidos>ROMERO MOLINA</apellidos><email>vromeromolina@iesvdc.com</email><numeroDNI>31166085</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1997-03-09</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>ALEJANDRO</nombre><apellidos>FERRER MORENO</apellidos><email>aferrermoreno@iesvdc.com</email><numeroDNI>21152814</numeroDNI><letraDNI>J</letraDNI><fechaNacimiento>1935-02-17</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JOSE ANGEL</nombre><apellidos>VAZQUEZ CANO</apellidos><email>jvazquezcano@iesvdc.com</email><numeroDNI>48744013</numeroDNI><letraDNI>K</letraDNI><fechaNacimiento>2001-02-24</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>ALFREDO</nombre><apellidos>MEDINA VARGAS</apellidos><email>amedinavargas@iesvdc.com</email><numeroDNI>26429141</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1999-07-16</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JAVIER</nombre><apellidos>ROJAS MARTINEZ</apellidos><email>jrojasmartinez@iesvdc.com</email><numeroDNI>50665570</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>1981-08-23</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>DANIEL</nombre><apellidos>FERNANDEZ ROMAN</apellidos><email>dfernandezroman@iesvdc.com</email><numeroDNI>43287294</numeroDNI><letraDNI>Y</letraDNI><fechaNacimiento>2008-07-10</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>EDUARDO</nombre><apellidos>MORA RODRIGUEZ</apellidos><email>emorarodriguez@iesvdc.com</email><numeroDNI>91409348</numeroDNI><letraDNI>B</letraDNI><fechaNacimiento>1937-12-26</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>LUCAS</nombre><apellidos>MARIN GOMEZ</apellidos><email>lmaringomez@iesvdc.com</email><numeroDNI>89758148</numeroDNI><letraDNI>G</letraDNI><fechaNacimiento>1933-03-18</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>PABLO</nombre><apellidos>AGUILAR PEÑA</apellidos><email>paguilarpena@iesvdc.com</email><numeroDNI>41874916</numeroDNI><letraDNI>N</letraDNI><fechaNacimiento>1997-05-28</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>ALBERTO</nombre><apellidos>LORENZO MEDINA</apellidos><email>alorenzomedina@iesvdc.com</email><numeroDNI>79097278</numeroDNI><letraDNI>W</letraDNI><fechaNacimiento>1926-12-09</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>MARCOS</nombre><apellidos>VICENTE GALLEGO</apellidos><email>mvicentegallego@iesvdc.com</email><numeroDNI>45924680</numeroDNI><letraDNI>M</letraDNI><fechaNacimiento>1965-04-20</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>RICARDO</nombre><apellidos>ARIAS ALONSO</apellidos><email>rariasalonso@iesvdc.com</email><numeroDNI>52784628</numeroDNI><letraDNI>L</letraDNI><fechaNacimiento>1956-10-09</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>EMILIO</nombre><apellidos>RAMIREZ MENDEZ</apellidos><email>eramirezmendez@iesvdc.com</email><numeroDNI>39829995</numeroDNI><letraDNI>K</letraDNI><fechaNacimiento>1927-04-24</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>RAUL</nombre><apellidos>PEÑA CRESPO</apellidos><email>rpenacrespo@iesvdc.com</email><numeroDNI>79649106</numeroDNI><letraDNI>Z</letraDNI><fechaNacimiento>1986-01-14</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>CRISTIAN</nombre><apellidos>PASTOR BENITEZ</apellidos><email>cpastorbenitez@iesvdc.com</email><numeroDNI>96412038</numeroDNI><letraDNI>V</letraDNI><fechaNacimiento>1940-10-20</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>JAIME</nombre><apellidos>CASTRO GOMEZ</apellidos><email>jcastrogomez@iesvdc.com</email><numeroDNI>15260513</numeroDNI><letraDNI>J</letraDNI><fechaNacimiento>1922-01-20</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>DAVID</nombre><apellidos>SANZ CASTRO</apellidos><email>dsanzcastro@iesvdc.com</email><numeroDNI>47248111</numeroDNI><letraDNI>Q</letraDNI><fechaNacimiento>1926-08-09</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>IVAN</nombre><apellidos>REYES REYES</apellidos><email>ireyesreyes@iesvdc.com</email><numeroDNI>29013464</numeroDNI><letraDNI>E</letraDNI><fechaNacimiento>2003-07-18</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>DIEGO</nombre><apellidos>GONZALEZ AGUILAR</apellidos><email>dgonzalezaguilar@iesvdc.com</email><numeroDNI>51080456</numeroDNI><letraDNI>D</letraDNI><fechaNacimiento>2002-03-20</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>JOSE MARIA</nombre><apellidos>GALLEGO PEÑA</apellidos><email>jgallegopena@iesvdc.com</email><numeroDNI>87845037</numeroDNI><letraDNI>X</letraDNI><fechaNacimiento>1933-04-29</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>AITOR</nombre><apellidos>LORENZO CALVO</apellidos><email>alorenzocalvo@iesvdc.com</email><numeroDNI>49032632</numeroDNI><letraDNI>J</letraDNI><fechaNacimiento>1947-12-17</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>EDUARDO</nombre><apellidos>MORALES SOTO</apellidos><email>emoralessoto@iesvdc.com</email><numeroDNI>67470800</numeroDNI><letraDNI>R</letraDNI><fechaNacimiento>1993-09-17</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>ENRIQUE</nombre><apellidos>GUTIERREZ ROJAS</apellidos><email>egutierrezrojas@iesvdc.com</email><numeroDNI>99613950</numeroDNI><letraDNI>F</letraDNI><fechaNacimiento>1920-04-09</fechaNacimiento><sexo>MUJER</sexo></listaPersonas><listaPersonas><nombre>MARTIN</nombre><apellidos>HERRERO VEGA</apellidos><email>mherrerovega@iesvdc.com</email><numeroDNI>85996802</numeroDNI><letraDNI>D</letraDNI><fechaNacimiento>1961-12-06</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>ISMAEL</nombre><apellidos>CARRASCO SANZ</apellidos><email>icarrascosanz@iesvdc.com</email><numeroDNI>23604966</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>1960-12-11</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>FRANCISCO JAVIER</nombre><apellidos>SANCHEZ RUBIO</apellidos><email>fsanchezrubio@iesvdc.com</email><numeroDNI>75815655</numeroDNI><letraDNI>L</letraDNI><fechaNacimiento>1985-12-16</fechaNacimiento><sexo>PND</sexo></listaPersonas><listaPersonas><nombre>EDUARDO</nombre><apellidos>MORA SAEZ</apellidos><email>emorasaez@iesvdc.com</email><numeroDNI>44921705</numeroDNI><letraDNI>Z</letraDNI><fechaNacimiento>2010-05-16</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>FRANCISCO JOSE</nombre><apellidos>LOPEZ CRESPO</apellidos><email>flopezcrespo@iesvdc.com</email><numeroDNI>34952683</numeroDNI><letraDNI>C</letraDNI><fechaNacimiento>1946-05-14</fechaNacimiento><sexo>HOMBRE</sexo></listaPersonas><listaPersonas><nombre>MOHAMED</nombre><apellidos>ALONSO BLANCO</apellidos><email>malonsoblanco@iesvdc.com</email><numeroDNI>79751713</numeroDNI><letraDNI>H</letraDNI><fechaNacimiento>2015-08-16</fechaNacimiento><sexo>MUJER</sexo></listaPersonas></personas>
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+    <listaPersonas>
+        <nombre>JOSE MIGUEL</nombre>
+        <apellidos>HERRERA LEON</apellidos>
+        <email>jherreraleon@iesvdc.com</email>
+        <numeroDNI>49941847</numeroDNI>
+        <letraDNI>S</letraDNI>
+        <fechaNacimiento>2005-09-18</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE</nombre>
+        <apellidos>SILVA SANZ</apellidos>
+        <email>jsilvasanz@iesvdc.com</email>
+        <numeroDNI>63485755</numeroDNI>
+        <letraDNI>M</letraDNI>
+        <fechaNacimiento>1956-07-12</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JUAN JOSE</nombre>
+        <apellidos>GIL VELASCO</apellidos>
+        <email>jgilvelasco@iesvdc.com</email>
+        <numeroDNI>60846902</numeroDNI>
+        <letraDNI>B</letraDNI>
+        <fechaNacimiento>1998-05-30</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOAQUIN</nombre>
+        <apellidos>VIDAL DURAN</apellidos>
+        <email>jvidalduran@iesvdc.com</email>
+        <numeroDNI>12579825</numeroDNI>
+        <letraDNI>K</letraDNI>
+        <fechaNacimiento>1928-11-12</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MANUEL</nombre>
+        <apellidos>VIDAL ORTEGA</apellidos>
+        <email>mvidalortega@iesvdc.com</email>
+        <numeroDNI>56545276</numeroDNI>
+        <letraDNI>Y</letraDNI>
+        <fechaNacimiento>1933-05-12</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JORGE</nombre>
+        <apellidos>GOMEZ FUENTES</apellidos>
+        <email>jgomezfuentes@iesvdc.com</email>
+        <numeroDNI>87485970</numeroDNI>
+        <letraDNI>L</letraDNI>
+        <fechaNacimiento>1978-01-27</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JESUS</nombre>
+        <apellidos>HERRERO TORRES</apellidos>
+        <email>jherrerotorres@iesvdc.com</email>
+        <numeroDNI>13519441</numeroDNI>
+        <letraDNI>H</letraDNI>
+        <fechaNacimiento>1983-03-29</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IVAN</nombre>
+        <apellidos>TORRES RAMOS</apellidos>
+        <email>itorresramos@iesvdc.com</email>
+        <numeroDNI>81469374</numeroDNI>
+        <letraDNI>Q</letraDNI>
+        <fechaNacimiento>1929-08-31</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ANGEL</nombre>
+        <apellidos>SANTOS RUIZ</apellidos>
+        <email>asantosruiz@iesvdc.com</email>
+        <numeroDNI>43775523</numeroDNI>
+        <letraDNI>Z</letraDNI>
+        <fechaNacimiento>1951-04-18</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JORGE</nombre>
+        <apellidos>GOMEZ BRAVO</apellidos>
+        <email>jgomezbravo@iesvdc.com</email>
+        <numeroDNI>74595846</numeroDNI>
+        <letraDNI>S</letraDNI>
+        <fechaNacimiento>1922-05-04</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IGNACIO</nombre>
+        <apellidos>LOZANO SANCHEZ</apellidos>
+        <email>ilozanosanchez@iesvdc.com</email>
+        <numeroDNI>14670871</numeroDNI>
+        <letraDNI>E</letraDNI>
+        <fechaNacimiento>1978-12-16</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>PAU</nombre>
+        <apellidos>ALVAREZ DIAZ</apellidos>
+        <email>palvarezdiaz@iesvdc.com</email>
+        <numeroDNI>47058530</numeroDNI>
+        <letraDNI>R</letraDNI>
+        <fechaNacimiento>1973-04-27</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOAN</nombre>
+        <apellidos>HIDALGO VARGAS</apellidos>
+        <email>jhidalgovargas@iesvdc.com</email>
+        <numeroDNI>97417957</numeroDNI>
+        <letraDNI>P</letraDNI>
+        <fechaNacimiento>1990-01-11</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE ANGEL</nombre>
+        <apellidos>MARTINEZ GONZALEZ</apellidos>
+        <email>jmartinezgonzalez@iesvdc.com</email>
+        <numeroDNI>56772945</numeroDNI>
+        <letraDNI>K</letraDNI>
+        <fechaNacimiento>1951-08-24</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DIEGO</nombre>
+        <apellidos>DURAN SANZ</apellidos>
+        <email>dduransanz@iesvdc.com</email>
+        <numeroDNI>76392774</numeroDNI>
+        <letraDNI>E</letraDNI>
+        <fechaNacimiento>2012-12-05</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE MANUEL</nombre>
+        <apellidos>FERNANDEZ MARTINEZ</apellidos>
+        <email>jfernandezmartinez@iesvdc.com</email>
+        <numeroDNI>58930569</numeroDNI>
+        <letraDNI>S</letraDNI>
+        <fechaNacimiento>2014-11-06</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JAVIER</nombre>
+        <apellidos>CARRASCO DELGADO</apellidos>
+        <email>jcarrascodelgado@iesvdc.com</email>
+        <numeroDNI>86813239</numeroDNI>
+        <letraDNI>S</letraDNI>
+        <fechaNacimiento>1945-12-03</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ALBERT</nombre>
+        <apellidos>RAMIREZ GUERRERO</apellidos>
+        <email>aramirezguerrero@iesvdc.com</email>
+        <numeroDNI>54182573</numeroDNI>
+        <letraDNI>R</letraDNI>
+        <fechaNacimiento>1995-01-11</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>AGUSTIN</nombre>
+        <apellidos>SILVA BENITEZ</apellidos>
+        <email>asilvabenitez@iesvdc.com</email>
+        <numeroDNI>14120693</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1969-03-20</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOAQUIN</nombre>
+        <apellidos>CANO CORTES</apellidos>
+        <email>jcanocortes@iesvdc.com</email>
+        <numeroDNI>92913633</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1959-05-24</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSEP</nombre>
+        <apellidos>ALONSO FLORES</apellidos>
+        <email>jalonsoflores@iesvdc.com</email>
+        <numeroDNI>70285135</numeroDNI>
+        <letraDNI>X</letraDNI>
+        <fechaNacimiento>1991-08-18</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MOHAMED</nombre>
+        <apellidos>RUIZ PRIETO</apellidos>
+        <email>mruizprieto@iesvdc.com</email>
+        <numeroDNI>27175634</numeroDNI>
+        <letraDNI>F</letraDNI>
+        <fechaNacimiento>1925-02-22</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE LUIS</nombre>
+        <apellidos>HERRERA ROJAS</apellidos>
+        <email>jherrerarojas@iesvdc.com</email>
+        <numeroDNI>54031465</numeroDNI>
+        <letraDNI>A</letraDNI>
+        <fechaNacimiento>2011-04-16</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ALVARO</nombre>
+        <apellidos>CAMPOS SANCHEZ</apellidos>
+        <email>acampossanchez@iesvdc.com</email>
+        <numeroDNI>77228733</numeroDNI>
+        <letraDNI>T</letraDNI>
+        <fechaNacimiento>2022-12-26</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE RAMON</nombre>
+        <apellidos>SANZ VELASCO</apellidos>
+        <email>jsanzvelasco@iesvdc.com</email>
+        <numeroDNI>53021189</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1930-02-03</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE MARIA</nombre>
+        <apellidos>CARMONA ORTEGA</apellidos>
+        <email>jcarmonaortega@iesvdc.com</email>
+        <numeroDNI>57108174</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1969-03-10</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JULIO</nombre>
+        <apellidos>ARIAS SERRANO</apellidos>
+        <email>jariasserrano@iesvdc.com</email>
+        <numeroDNI>23195641</numeroDNI>
+        <letraDNI>A</letraDNI>
+        <fechaNacimiento>1977-02-01</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FELIX</nombre>
+        <apellidos>SANTOS REYES</apellidos>
+        <email>fsantosreyes@iesvdc.com</email>
+        <numeroDNI>69178850</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1922-01-03</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MIGUEL ANGEL</nombre>
+        <apellidos>HERRERA MONTERO</apellidos>
+        <email>mherreramontero@iesvdc.com</email>
+        <numeroDNI>96262701</numeroDNI>
+        <letraDNI>L</letraDNI>
+        <fechaNacimiento>1947-06-04</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IKER</nombre>
+        <apellidos>MOLINA HERRERA</apellidos>
+        <email>imolinaherrera@iesvdc.com</email>
+        <numeroDNI>25278689</numeroDNI>
+        <letraDNI>X</letraDNI>
+        <fechaNacimiento>1936-09-06</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DAVID</nombre>
+        <apellidos>MORENO DOMINGUEZ</apellidos>
+        <email>dmorenodominguez@iesvdc.com</email>
+        <numeroDNI>51573527</numeroDNI>
+        <letraDNI>Y</letraDNI>
+        <fechaNacimiento>2015-08-01</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>TOMAS</nombre>
+        <apellidos>PARRA RAMOS</apellidos>
+        <email>tparraramos@iesvdc.com</email>
+        <numeroDNI>18005938</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>2011-09-08</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JAVIER</nombre>
+        <apellidos>PASTOR MUÑOZ</apellidos>
+        <email>jpastormunoz@iesvdc.com</email>
+        <numeroDNI>99465945</numeroDNI>
+        <letraDNI>F</letraDNI>
+        <fechaNacimiento>2011-05-08</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JUAN FRANCISCO</nombre>
+        <apellidos>VEGA IGLESIAS</apellidos>
+        <email>jvegaiglesias@iesvdc.com</email>
+        <numeroDNI>10912352</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1975-10-26</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MIGUEL</nombre>
+        <apellidos>PEREZ PEÑA</apellidos>
+        <email>mperezpena@iesvdc.com</email>
+        <numeroDNI>59344258</numeroDNI>
+        <letraDNI>A</letraDNI>
+        <fechaNacimiento>2010-05-21</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JUAN ANTONIO</nombre>
+        <apellidos>DELGADO GUTIERREZ</apellidos>
+        <email>jdelgadogutierrez@iesvdc.com</email>
+        <numeroDNI>86873317</numeroDNI>
+        <letraDNI>V</letraDNI>
+        <fechaNacimiento>1946-06-11</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE LUIS</nombre>
+        <apellidos>MONTERO CAMPOS</apellidos>
+        <email>jmonterocampos@iesvdc.com</email>
+        <numeroDNI>98083612</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>1937-01-23</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MIGUEL</nombre>
+        <apellidos>SOTO DIAZ</apellidos>
+        <email>msotodiaz@iesvdc.com</email>
+        <numeroDNI>30983045</numeroDNI>
+        <letraDNI>K</letraDNI>
+        <fechaNacimiento>1984-11-02</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FRANCISCO</nombre>
+        <apellidos>CASTRO SUAREZ</apellidos>
+        <email>fcastrosuarez@iesvdc.com</email>
+        <numeroDNI>46868839</numeroDNI>
+        <letraDNI>Z</letraDNI>
+        <fechaNacimiento>1978-06-24</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>CARLOS</nombre>
+        <apellidos>DELGADO FUENTES</apellidos>
+        <email>cdelgadofuentes@iesvdc.com</email>
+        <numeroDNI>89525148</numeroDNI>
+        <letraDNI>V</letraDNI>
+        <fechaNacimiento>1968-04-28</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MARIANO</nombre>
+        <apellidos>NUÑEZ ARIAS</apellidos>
+        <email>mnunezarias@iesvdc.com</email>
+        <numeroDNI>64104203</numeroDNI>
+        <letraDNI>Y</letraDNI>
+        <fechaNacimiento>1969-03-10</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FELIPE</nombre>
+        <apellidos>SANTANA GARCIA</apellidos>
+        <email>fsantanagarcia@iesvdc.com</email>
+        <numeroDNI>70800753</numeroDNI>
+        <letraDNI>Z</letraDNI>
+        <fechaNacimiento>2005-10-15</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JUAN ANTONIO</nombre>
+        <apellidos>REYES SANCHEZ</apellidos>
+        <email>jreyessanchez@iesvdc.com</email>
+        <numeroDNI>64908252</numeroDNI>
+        <letraDNI>K</letraDNI>
+        <fechaNacimiento>2018-07-26</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IVAN</nombre>
+        <apellidos>DELGADO MARIN</apellidos>
+        <email>idelgadomarin@iesvdc.com</email>
+        <numeroDNI>75375056</numeroDNI>
+        <letraDNI>P</letraDNI>
+        <fechaNacimiento>1955-05-12</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE LUIS</nombre>
+        <apellidos>CASTRO MOLINA</apellidos>
+        <email>jcastromolina@iesvdc.com</email>
+        <numeroDNI>68922194</numeroDNI>
+        <letraDNI>A</letraDNI>
+        <fechaNacimiento>1935-06-25</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FERNANDO</nombre>
+        <apellidos>IGLESIAS MORALES</apellidos>
+        <email>figlesiasmorales@iesvdc.com</email>
+        <numeroDNI>73091682</numeroDNI>
+        <letraDNI>M</letraDNI>
+        <fechaNacimiento>1993-07-01</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FRANCISCO</nombre>
+        <apellidos>LEON LEON</apellidos>
+        <email>fleonleon@iesvdc.com</email>
+        <numeroDNI>19160823</numeroDNI>
+        <letraDNI>Y</letraDNI>
+        <fechaNacimiento>1927-10-17</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>RODRIGO</nombre>
+        <apellidos>VIDAL MEDINA</apellidos>
+        <email>rvidalmedina@iesvdc.com</email>
+        <numeroDNI>17376926</numeroDNI>
+        <letraDNI>N</letraDNI>
+        <fechaNacimiento>1959-02-28</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IKER</nombre>
+        <apellidos>CORTES MUÑOZ</apellidos>
+        <email>icortesmunoz@iesvdc.com</email>
+        <numeroDNI>36312801</numeroDNI>
+        <letraDNI>X</letraDNI>
+        <fechaNacimiento>2023-10-11</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ANTONIO</nombre>
+        <apellidos>MOYA GUTIERREZ</apellidos>
+        <email>amoyagutierrez@iesvdc.com</email>
+        <numeroDNI>26100965</numeroDNI>
+        <letraDNI>J</letraDNI>
+        <fechaNacimiento>1994-11-11</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FERNANDO</nombre>
+        <apellidos>LOPEZ ORTEGA</apellidos>
+        <email>flopezortega@iesvdc.com</email>
+        <numeroDNI>93999467</numeroDNI>
+        <letraDNI>P</letraDNI>
+        <fechaNacimiento>1962-05-31</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>GONZALO</nombre>
+        <apellidos>PRIETO NIETO</apellidos>
+        <email>gprietonieto@iesvdc.com</email>
+        <numeroDNI>23312804</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1994-11-19</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FELIX</nombre>
+        <apellidos>DOMINGUEZ MOLINA</apellidos>
+        <email>fdominguezmolina@iesvdc.com</email>
+        <numeroDNI>69969414</numeroDNI>
+        <letraDNI>X</letraDNI>
+        <fechaNacimiento>1950-05-27</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>EMILIO</nombre>
+        <apellidos>DELGADO RAMIREZ</apellidos>
+        <email>edelgadoramirez@iesvdc.com</email>
+        <numeroDNI>63398957</numeroDNI>
+        <letraDNI>D</letraDNI>
+        <fechaNacimiento>1964-05-03</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>TOMAS</nombre>
+        <apellidos>CABALLERO GARCIA</apellidos>
+        <email>tcaballerogarcia@iesvdc.com</email>
+        <numeroDNI>98256355</numeroDNI>
+        <letraDNI>X</letraDNI>
+        <fechaNacimiento>1965-12-15</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FELIX</nombre>
+        <apellidos>FUENTES HIDALGO</apellidos>
+        <email>ffuenteshidalgo@iesvdc.com</email>
+        <numeroDNI>78498268</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>2003-10-31</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DIEGO</nombre>
+        <apellidos>HERNANDEZ MEDINA</apellidos>
+        <email>dhernandezmedina@iesvdc.com</email>
+        <numeroDNI>81085057</numeroDNI>
+        <letraDNI>Y</letraDNI>
+        <fechaNacimiento>1993-09-11</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>VICTOR MANUEL</nombre>
+        <apellidos>MEDINA SANTIAGO</apellidos>
+        <email>vmedinasantiago@iesvdc.com</email>
+        <numeroDNI>48416351</numeroDNI>
+        <letraDNI>V</letraDNI>
+        <fechaNacimiento>1998-04-06</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE ANGEL</nombre>
+        <apellidos>GIMENEZ CARRASCO</apellidos>
+        <email>jgimenezcarrasco@iesvdc.com</email>
+        <numeroDNI>22512227</numeroDNI>
+        <letraDNI>B</letraDNI>
+        <fechaNacimiento>2023-10-27</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>HECTOR</nombre>
+        <apellidos>GONZALEZ NIETO</apellidos>
+        <email>hgonzaleznieto@iesvdc.com</email>
+        <numeroDNI>37521139</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>2010-06-21</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MANUEL</nombre>
+        <apellidos>CASTILLO RAMIREZ</apellidos>
+        <email>mcastilloramirez@iesvdc.com</email>
+        <numeroDNI>65762408</numeroDNI>
+        <letraDNI>A</letraDNI>
+        <fechaNacimiento>2019-06-25</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE IGNACIO</nombre>
+        <apellidos>PEREZ BRAVO</apellidos>
+        <email>jperezbravo@iesvdc.com</email>
+        <numeroDNI>96087150</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1933-05-23</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE IGNACIO</nombre>
+        <apellidos>SERRANO VIDAL</apellidos>
+        <email>jserranovidal@iesvdc.com</email>
+        <numeroDNI>90912113</numeroDNI>
+        <letraDNI>J</letraDNI>
+        <fechaNacimiento>1928-09-23</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DOMINGO</nombre>
+        <apellidos>SERRANO GIL</apellidos>
+        <email>dserranogil@iesvdc.com</email>
+        <numeroDNI>47808092</numeroDNI>
+        <letraDNI>Q</letraDNI>
+        <fechaNacimiento>1947-03-31</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MIGUEL</nombre>
+        <apellidos>VEGA GARCIA</apellidos>
+        <email>mvegagarcia@iesvdc.com</email>
+        <numeroDNI>52890520</numeroDNI>
+        <letraDNI>L</letraDNI>
+        <fechaNacimiento>2000-01-29</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JUAN ANTONIO</nombre>
+        <apellidos>BLANCO MOYA</apellidos>
+        <email>jblancomoya@iesvdc.com</email>
+        <numeroDNI>17885763</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>1944-02-19</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IKER</nombre>
+        <apellidos>MOLINA MUÑOZ</apellidos>
+        <email>imolinamunoz@iesvdc.com</email>
+        <numeroDNI>10316922</numeroDNI>
+        <letraDNI>L</letraDNI>
+        <fechaNacimiento>1969-10-14</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ENRIQUE</nombre>
+        <apellidos>SANZ CABRERA</apellidos>
+        <email>esanzcabrera@iesvdc.com</email>
+        <numeroDNI>60859810</numeroDNI>
+        <letraDNI>Q</letraDNI>
+        <fechaNacimiento>1944-01-23</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>RAFAEL</nombre>
+        <apellidos>IBAÑEZ ROMERO</apellidos>
+        <email>ribanezromero@iesvdc.com</email>
+        <numeroDNI>26954394</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1923-09-23</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>RAUL</nombre>
+        <apellidos>DIEZ PEREZ</apellidos>
+        <email>rdiezperez@iesvdc.com</email>
+        <numeroDNI>49222624</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1958-03-11</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>RUBEN</nombre>
+        <apellidos>GONZALEZ VAZQUEZ</apellidos>
+        <email>rgonzalezvazquez@iesvdc.com</email>
+        <numeroDNI>22524616</numeroDNI>
+        <letraDNI>A</letraDNI>
+        <fechaNacimiento>1990-10-30</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>VICTOR</nombre>
+        <apellidos>ROMERO MOLINA</apellidos>
+        <email>vromeromolina@iesvdc.com</email>
+        <numeroDNI>31166085</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1997-03-09</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ALEJANDRO</nombre>
+        <apellidos>FERRER MORENO</apellidos>
+        <email>aferrermoreno@iesvdc.com</email>
+        <numeroDNI>21152814</numeroDNI>
+        <letraDNI>J</letraDNI>
+        <fechaNacimiento>1935-02-17</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE ANGEL</nombre>
+        <apellidos>VAZQUEZ CANO</apellidos>
+        <email>jvazquezcano@iesvdc.com</email>
+        <numeroDNI>48744013</numeroDNI>
+        <letraDNI>K</letraDNI>
+        <fechaNacimiento>2001-02-24</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ALFREDO</nombre>
+        <apellidos>MEDINA VARGAS</apellidos>
+        <email>amedinavargas@iesvdc.com</email>
+        <numeroDNI>26429141</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1999-07-16</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JAVIER</nombre>
+        <apellidos>ROJAS MARTINEZ</apellidos>
+        <email>jrojasmartinez@iesvdc.com</email>
+        <numeroDNI>50665570</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>1981-08-23</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DANIEL</nombre>
+        <apellidos>FERNANDEZ ROMAN</apellidos>
+        <email>dfernandezroman@iesvdc.com</email>
+        <numeroDNI>43287294</numeroDNI>
+        <letraDNI>Y</letraDNI>
+        <fechaNacimiento>2008-07-10</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>EDUARDO</nombre>
+        <apellidos>MORA RODRIGUEZ</apellidos>
+        <email>emorarodriguez@iesvdc.com</email>
+        <numeroDNI>91409348</numeroDNI>
+        <letraDNI>B</letraDNI>
+        <fechaNacimiento>1937-12-26</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>LUCAS</nombre>
+        <apellidos>MARIN GOMEZ</apellidos>
+        <email>lmaringomez@iesvdc.com</email>
+        <numeroDNI>89758148</numeroDNI>
+        <letraDNI>G</letraDNI>
+        <fechaNacimiento>1933-03-18</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>PABLO</nombre>
+        <apellidos>AGUILAR PEÑA</apellidos>
+        <email>paguilarpena@iesvdc.com</email>
+        <numeroDNI>41874916</numeroDNI>
+        <letraDNI>N</letraDNI>
+        <fechaNacimiento>1997-05-28</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ALBERTO</nombre>
+        <apellidos>LORENZO MEDINA</apellidos>
+        <email>alorenzomedina@iesvdc.com</email>
+        <numeroDNI>79097278</numeroDNI>
+        <letraDNI>W</letraDNI>
+        <fechaNacimiento>1926-12-09</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MARCOS</nombre>
+        <apellidos>VICENTE GALLEGO</apellidos>
+        <email>mvicentegallego@iesvdc.com</email>
+        <numeroDNI>45924680</numeroDNI>
+        <letraDNI>M</letraDNI>
+        <fechaNacimiento>1965-04-20</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>RICARDO</nombre>
+        <apellidos>ARIAS ALONSO</apellidos>
+        <email>rariasalonso@iesvdc.com</email>
+        <numeroDNI>52784628</numeroDNI>
+        <letraDNI>L</letraDNI>
+        <fechaNacimiento>1956-10-09</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>EMILIO</nombre>
+        <apellidos>RAMIREZ MENDEZ</apellidos>
+        <email>eramirezmendez@iesvdc.com</email>
+        <numeroDNI>39829995</numeroDNI>
+        <letraDNI>K</letraDNI>
+        <fechaNacimiento>1927-04-24</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>RAUL</nombre>
+        <apellidos>PEÑA CRESPO</apellidos>
+        <email>rpenacrespo@iesvdc.com</email>
+        <numeroDNI>79649106</numeroDNI>
+        <letraDNI>Z</letraDNI>
+        <fechaNacimiento>1986-01-14</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>CRISTIAN</nombre>
+        <apellidos>PASTOR BENITEZ</apellidos>
+        <email>cpastorbenitez@iesvdc.com</email>
+        <numeroDNI>96412038</numeroDNI>
+        <letraDNI>V</letraDNI>
+        <fechaNacimiento>1940-10-20</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JAIME</nombre>
+        <apellidos>CASTRO GOMEZ</apellidos>
+        <email>jcastrogomez@iesvdc.com</email>
+        <numeroDNI>15260513</numeroDNI>
+        <letraDNI>J</letraDNI>
+        <fechaNacimiento>1922-01-20</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DAVID</nombre>
+        <apellidos>SANZ CASTRO</apellidos>
+        <email>dsanzcastro@iesvdc.com</email>
+        <numeroDNI>47248111</numeroDNI>
+        <letraDNI>Q</letraDNI>
+        <fechaNacimiento>1926-08-09</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>IVAN</nombre>
+        <apellidos>REYES REYES</apellidos>
+        <email>ireyesreyes@iesvdc.com</email>
+        <numeroDNI>29013464</numeroDNI>
+        <letraDNI>E</letraDNI>
+        <fechaNacimiento>2003-07-18</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>DIEGO</nombre>
+        <apellidos>GONZALEZ AGUILAR</apellidos>
+        <email>dgonzalezaguilar@iesvdc.com</email>
+        <numeroDNI>51080456</numeroDNI>
+        <letraDNI>D</letraDNI>
+        <fechaNacimiento>2002-03-20</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>JOSE MARIA</nombre>
+        <apellidos>GALLEGO PEÑA</apellidos>
+        <email>jgallegopena@iesvdc.com</email>
+        <numeroDNI>87845037</numeroDNI>
+        <letraDNI>X</letraDNI>
+        <fechaNacimiento>1933-04-29</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>AITOR</nombre>
+        <apellidos>LORENZO CALVO</apellidos>
+        <email>alorenzocalvo@iesvdc.com</email>
+        <numeroDNI>49032632</numeroDNI>
+        <letraDNI>J</letraDNI>
+        <fechaNacimiento>1947-12-17</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>EDUARDO</nombre>
+        <apellidos>MORALES SOTO</apellidos>
+        <email>emoralessoto@iesvdc.com</email>
+        <numeroDNI>67470800</numeroDNI>
+        <letraDNI>R</letraDNI>
+        <fechaNacimiento>1993-09-17</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ENRIQUE</nombre>
+        <apellidos>GUTIERREZ ROJAS</apellidos>
+        <email>egutierrezrojas@iesvdc.com</email>
+        <numeroDNI>99613950</numeroDNI>
+        <letraDNI>F</letraDNI>
+        <fechaNacimiento>1920-04-09</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MARTIN</nombre>
+        <apellidos>HERRERO VEGA</apellidos>
+        <email>mherrerovega@iesvdc.com</email>
+        <numeroDNI>85996802</numeroDNI>
+        <letraDNI>D</letraDNI>
+        <fechaNacimiento>1961-12-06</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>ISMAEL</nombre>
+        <apellidos>CARRASCO SANZ</apellidos>
+        <email>icarrascosanz@iesvdc.com</email>
+        <numeroDNI>23604966</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>1960-12-11</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FRANCISCO JAVIER</nombre>
+        <apellidos>SANCHEZ RUBIO</apellidos>
+        <email>fsanchezrubio@iesvdc.com</email>
+        <numeroDNI>75815655</numeroDNI>
+        <letraDNI>L</letraDNI>
+        <fechaNacimiento>1985-12-16</fechaNacimiento>
+        <sexo>PND</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>EDUARDO</nombre>
+        <apellidos>MORA SAEZ</apellidos>
+        <email>emorasaez@iesvdc.com</email>
+        <numeroDNI>44921705</numeroDNI>
+        <letraDNI>Z</letraDNI>
+        <fechaNacimiento>2010-05-16</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>FRANCISCO JOSE</nombre>
+        <apellidos>LOPEZ CRESPO</apellidos>
+        <email>flopezcrespo@iesvdc.com</email>
+        <numeroDNI>34952683</numeroDNI>
+        <letraDNI>C</letraDNI>
+        <fechaNacimiento>1946-05-14</fechaNacimiento>
+        <sexo>HOMBRE</sexo>
+    </listaPersonas>
+    <listaPersonas>
+        <nombre>MOHAMED</nombre>
+        <apellidos>ALONSO BLANCO</apellidos>
+        <email>malonsoblanco@iesvdc.com</email>
+        <numeroDNI>79751713</numeroDNI>
+        <letraDNI>H</letraDNI>
+        <fechaNacimiento>2015-08-16</fechaNacimiento>
+        <sexo>MUJER</sexo>
+    </listaPersonas>
+</personas>
