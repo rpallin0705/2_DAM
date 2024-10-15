@@ -7,3 +7,13 @@
 ## Node
 
 **npm init** -> para crear un proyecto node      
+
+## Martes 15 de octubre
+
+### Bucle for in
+
+Se utiliza para iterar las propieddades enumerables de un objeto. **Se utiliza para trabajar con objetos, no arrays**
+
+### Bucle for of
+
+Igual que el for in pero se utiliza para `iterar sobre el contenido de un array`

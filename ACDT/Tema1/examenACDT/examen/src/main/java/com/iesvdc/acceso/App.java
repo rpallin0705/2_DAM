@@ -11,14 +11,14 @@ public class App {
         if(args.length > 1 || args.length < 1)
             usage();
 
-            // if (args[0].endsWith(".json")) {
-            //     jsonAXML(args[0]);   
-            // } else if (args[0].endsWith(".xml")) {
-            //     xmlAJSON(args[0]);
-            // }
+            if (args[0].endsWith(".json")) {
+                jsonAXML(args[0]);   
+            } else if (args[0].endsWith(".xml")) {
+                xmlAJSON(args[0]);
+            }
 
-        jsonAXML("proyecto.json");
-        xmlAJSON("proyecto.xml");
+        // jsonAXML("proyecto.json");
+        // xmlAJSON("proyecto.xml");
     }
 
     private static void jsonAXML(String archivoJSON) {
