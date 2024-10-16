@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item end">10</div>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        border: 10px solid red;
+    }
+    
+    .container {
+        display: flex;
+        flex-shrink: 1;
+        min-height: 100vh;
+        box-sizing: border-box;
+        
+        height: 100vh;
+    }
+
+    .item {
+        text-align: center;
+        font-size: 100px;
+        width: 100px;
+        color: white;
+    }
+
+    .item:nth-child(1){background-color: #FF6B6B;}
+    .item:nth-child(2){background-color: #4ECDC4;}
+    .item:nth-child(3){background-color: #45B7D1;}
+    .item:nth-child(4){background-color: #F7DC6F;}
+    .item:nth-child(5){background-color: #B8E994;}
+    .item:nth-child(6){background-color: #D980FA;}
+    .item:nth-child(7){background-color: #FDA7DF;}
+    .item:nth-child(8){background-color: #9AECDB;}
+    .item:nth-child(9){background-color: #FEA47F;}
+    .item:nth-child(10){
+        background-color: aquamarine;
+        flex-basis: 150px;
+    }
+
+</style>

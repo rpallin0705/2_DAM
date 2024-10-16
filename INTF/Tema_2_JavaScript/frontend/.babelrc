@@ -1,0 +1,4 @@
+{
+    // Indica que utiliza el preset de JavaScript ES6 Y React   
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
