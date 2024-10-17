@@ -16,4 +16,22 @@ Se utiliza para iterar las propieddades enumerables de un objeto. **Se utiliza p
 
 ### Bucle for of
 
-Igual que el for in pero se utiliza para `iterar sobre el contenido de un array`
+Igual que el **for in** pero se utiliza para `iterar sobre el contenido de un array`
+
+## Objetos en javascript
+
+Creación de objetos
+
+```Javascript
+const persona = {
+    nombre: "Luis",
+    apellidos: "Molina",
+    edad: 30,
+
+    saludar: function() {
+        console.log(`Hola, mi nombre es ${this.nombre}`);
+    }
+};
+
+console.log(persona.nombre);
+```
