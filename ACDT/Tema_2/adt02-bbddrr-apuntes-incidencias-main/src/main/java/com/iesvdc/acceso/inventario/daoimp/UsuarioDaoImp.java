@@ -8,9 +8,8 @@ import java.util.List;
 
 import com.iesvdc.acceso.inventario.conexion.Conexion;
 import com.iesvdc.acceso.inventario.dao.UsuarioDao;
-import com.iesvdc.acceso.inventario.modelo.TipoUsuario;
 import com.iesvdc.acceso.inventario.modelo.Usuario;
-import com.mysql.cj.PreparedQuery;
+
 
 public class UsuarioDaoImp implements UsuarioDao {
 

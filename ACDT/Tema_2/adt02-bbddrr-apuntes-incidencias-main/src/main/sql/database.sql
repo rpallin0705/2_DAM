@@ -2,6 +2,8 @@ DROP DATABASE `inventario`;
 
 CREATE DATABASE `inventario`;
 
+USE inventario
+
 -- usuario
 
 CREATE TABLE `usuario` (   

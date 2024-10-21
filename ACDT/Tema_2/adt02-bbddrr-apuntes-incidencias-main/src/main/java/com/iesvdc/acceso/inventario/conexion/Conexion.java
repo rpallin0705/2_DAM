@@ -2,8 +2,15 @@
  */
 package com.iesvdc.acceso.inventario.conexion;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.Reader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -57,7 +64,13 @@ public class Conexion {
 
     public boolean createDatabase() {
         boolean solucion = true;
-        try {
+        try (FileInputStream fis = new FileInputStream("db.properties")) {
+
+            prop = new Properties();
+            prop.load(fis);
+            this.conn = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:33306/inventario",
+                    prop);
             String sql = "CREATE DATABASE `inventario`";
             PreparedStatement ps = this.conn.prepareStatement(sql);
             ps.executeUpdate();
@@ -77,5 +90,26 @@ public class Conexion {
             solucion = false;
         }
         return solucion;
+    }
+
+
+    public void leerArchivoDatabase() {
+        File file = new File("sql/database.sql");
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line = br.readLine();
+            StringBuilder comando = new StringBuilder();
+            String[] comandos = new String[] {};
+            while ((line = br.readLine()) != null) {
+                if (line.endsWith(";"))                     
+                    comando.append(line);
+                    
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+            
+
     }
 }
