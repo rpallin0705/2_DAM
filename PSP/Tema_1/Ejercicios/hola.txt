@@ -1,0 +1,7 @@
+total 1048
+-rw-r--r-- 1 alvar 197609      0 Oct 21 22:19 hola.txt
+-rw-r--r-- 1 alvar 197609 610231 Oct 18 22:35 practica_rapl.odt
+-rw-r--r-- 1 alvar 197609 446827 Oct 18 22:35 Practica1_RAPL.pdf
+-rw-r--r-- 1 alvar 197609    664 Oct 18 22:35 Tarea51.java
+-rw-r--r-- 1 alvar 197609   1799 Oct 18 22:35 Tarea52.java
+-rw-r--r-- 1 alvar 197609   1877 Oct 21 22:19 Tarea6.java
