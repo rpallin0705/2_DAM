@@ -1,8 +1,8 @@
-DROP DATABASE `inventario`;
+DROP DATABASE IF EXISTS `inventario`;
 
-CREATE DATABASE `inventario`;
+CREATE DATABASE IF NOT EXISTS `inventario`;
 
-USE inventario
+USE inventario;
 
 -- usuario
 
