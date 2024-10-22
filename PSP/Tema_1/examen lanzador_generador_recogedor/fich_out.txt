@@ -1,0 +1,50 @@
+
+Configuraci?n IP de Windows
+
+
+Adaptador de Ethernet Ethernet:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec?fico para la conexi?n. . : 
+
+Adaptador de Ethernet vEthernet (Default Switch):
+
+   Sufijo DNS espec?fico para la conexi?n. . : 
+   V?nculo: direcci?n IPv6 local. . . : fe80::5c23:76a4:e91d:283f%13
+   Direcci?n IPv4. . . . . . . . . . . . . . : 172.21.144.1
+   M?scara de subred . . . . . . . . . . . . : 255.255.240.0
+   Puerta de enlace predeterminada . . . . . : 
+
+Adaptador de Ethernet vEthernet (WSL):
+
+   Sufijo DNS espec?fico para la conexi?n. . : 
+   V?nculo: direcci?n IPv6 local. . . : fe80::d49b:6a20:8eac:112d%41
+   Direcci?n IPv4. . . . . . . . . . . . . . : 172.17.48.1
+   M?scara de subred . . . . . . . . . . . . : 255.255.240.0
+   Puerta de enlace predeterminada . . . . . : 
+
+Adaptador de Ethernet Ethernet 2:
+
+   Sufijo DNS espec?fico para la conexi?n. . : 
+   V?nculo: direcci?n IPv6 local. . . : fe80::dda0:69bd:cbd8:890%18
+   Direcci?n IPv4. . . . . . . . . . . . . . : 192.168.56.1
+   M?scara de subred . . . . . . . . . . . . : 255.255.255.0
+   Puerta de enlace predeterminada . . . . . : 
+
+Adaptador de LAN inal?mbrica Conexi?n de ?rea local* 1:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec?fico para la conexi?n. . : 
+
+Adaptador de LAN inal?mbrica Conexi?n de ?rea local* 10:
+
+   Estado de los medios. . . . . . . . . . . : medios desconectados
+   Sufijo DNS espec?fico para la conexi?n. . : 
+
+Adaptador de LAN inal?mbrica Wi-Fi:
+
+   Sufijo DNS espec?fico para la conexi?n. . : 
+   V?nculo: direcci?n IPv6 local. . . : fe80::8e70:4a8e:81a7:143e%16
+   Direcci?n IPv4. . . . . . . . . . . . . . : 192.168.56.160
+   M?scara de subred . . . . . . . . . . . . : 255.255.254.0
+   Puerta de enlace predeterminada . . . . . : 192.168.56.1

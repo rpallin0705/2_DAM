@@ -34,7 +34,6 @@ public class Tarea6 {
                     fl.write(fichero + System.lineSeparator());
                 }
             }
-            
 
             p.waitFor();
         } catch (IOException | InterruptedException ioe) {

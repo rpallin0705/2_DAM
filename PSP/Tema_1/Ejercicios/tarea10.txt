@@ -1,0 +1,21 @@
+ El volumen de la unidad E es PATATAS CON TOMATE
+ El n�mero de serie del volumen es: 6E47-AAB4
+
+ Directorio de E:\DAM\2_DAM\PSP\Tema_1\Ejercicios
+
+22/10/2024  18:30    <DIR>          .
+22/10/2024  18:30    <DIR>          ..
+22/10/2024  18:25               378 hola.txt
+22/10/2024  17:49               378 hola_1.txt
+18/10/2024  22:35           446.827 Practica1_RAPL.pdf
+18/10/2024  22:35           610.231 practica_rapl.odt
+22/10/2024  18:51             1.214 Tarea10.java
+22/10/2024  18:52                 0 tarea10.txt
+18/10/2024  22:35               664 Tarea51.java
+18/10/2024  22:35             1.799 Tarea52.java
+22/10/2024  18:41             1.877 Tarea6.java
+22/10/2024  17:49             1.529 Tarea7.java
+22/10/2024  18:09             1.181 Tarea8.java
+22/10/2024  18:15             1.096 Tarea9.java
+              12 archivos      1.067.174 bytes
+               2 dirs  834.451.607.552 bytes libres
