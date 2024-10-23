@@ -1,0 +1,40 @@
+public class Ejecutor {
+	
+	public static void main (String[] args){
+	
+	
+		// Creamos el ProcessBuilder de cada Programa	
+		ProcessBuilder pbGenerador = new ProcessBuilder("java", "Generador.java");
+		ProcessBuilder pbSumador = new ProcessBuilder("java", "Sumador.java");
+
+		// Iniciamos Generador y Sumador
+		Process pGenerador = pbEjecutor.start();
+		Process pSumador = pbSumador.start();
+		
+
+		try ( Scanner scGenerador = new Scanner(pGenerador.getImputStream // ??);
+			PrintWriter prSumador = new PrintWriter( pSumador.getOutputStream(), true ) ) {
+			String lineaGenerador = "";
+			
+			while(scGenerador.hasNextLine()) {
+				lineaGenerador = scGenerador.nextInt();
+				// Mostrar numeros generados
+				
+				prSumador.write(lineaGenerador)
+			}
+			
+			// Conseguir salida de sumador
+
+			try( Scanner scSumador = new Scanner(pSumador.getImputStream)){
+				
+				while (scGenerador.hasNextLine);
+			
+			}catch (Exception e) {
+				System.out.println(e.getMessage())
+			}
+		}catch (Exception e) {
+				System.out.println(e.getMessage())
+		}
+		
+	}
+}
