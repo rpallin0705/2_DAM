@@ -1,37 +1,3 @@
-/**
- * 
-
-
-.
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-u. Crea el array a = [1,2,3,4,5] y b = [6,7,8,9,10] con literales. Concatena los arrays a y b con concat.
-Después, usa el operador spread. Crea una variable const cola. Usa unshift y shift para añadir y
-quitar elementos. Dado el array resultante de la concatenación de a y b, obtén el subarray desde
-el índice 2 hasta el penúltimo elemento (slice). Usa splice para quitar los 2 últimos elementos
-de un array.
-v. Rellena con fill un array de 100 elementos con ‑1.
-w. Crea un array de cadenas. Busca con indexOf una cadena.
-x. Comprueba si la cadena “hola” está dentro del array anterior.
-y. Ordena la lista de cadenas anterior de forma alfabética con sort.
-z. Crea un array vacío de 50 posiciones. Con forEach, asigna valores aleatorios entre 0 y 100. Des‑
-pués, ordena con sort de menor a mayor. Cambia y ordena de mayor a menor.
-aa. Usa reverse para invertir el array anterior.
- */
-
 // a. Crea un array “datos” vacío con un literal.
 let datos = [];
 
@@ -121,3 +87,39 @@ let string = "Vamos a usar flatMap. Es igual que map. Pero aplana los arrays"
 let stringSeparado = string.split(". ")
 let palabra = stringSeparado.flatMap(frase => frase.trim().split(" "));
 console.log(palabra)       
+
+/*
+u. Crea el array a = [1,2,3,4,5] y b = [6,7,8,9,10] con literales. Concatena los arrays a y b con concat.
+Después, usa el operador spread. Crea una variable const cola. Usa unshift y shift para añadir y
+quitar elementos. Dado el array resultante de la concatenación de a y b, obtén el subarray desde
+el índice 2 hasta el penúltimo elemento (slice). Usa splice para quitar los 2 últimos elementos
+de un array.
+ */
+
+let a = [1,2,3,4,5]
+let b = [6,7,8,9,10]
+let c = a.concat(b)
+const cola = [...c]
+cola.unshift(0)
+cola.shift()
+
+// v. Rellena con fill un array de 100 elementos con ‑1.
+let arrayMenosUno = new Array(100).fill(-1)
+
+// w. Crea un array de cadenas. Busca con indexOf una cadena.
+let cadenas = ["1", "2", "3", "4", "5"]
+let cadena = cadenas.indexOf("3")
+
+// x. Comprueba si la cadena “hola” está dentro del array anterior.
+let hola = cadenas.includes("hola")
+
+// y. Ordena la lista de cadenas anterior de forma alfabética con sort.
+let ordenada = cadenas.sort()
+
+// z. Crea un array vacío de 50 posiciones. Con forEach, asigna valores aleatorios entre 0 y 100. Des‑
+// pués, ordena con sort de menor a mayor. Cambia y ordena de mayor a menor.
+let arrayVacio = new Array(50)
+arrayVacio.forEach(e => arrayVacio.push(arrayRandom[index] = Math.floor(Math.random() * 101)))
+
+// aa. Usa reverse para invertir el array anterior.
+arrayVacio.reverse()
