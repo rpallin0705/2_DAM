@@ -54,7 +54,7 @@ public class Conexion {
             try {
                 this.conn.close();
             } catch (SQLException e) {
-
+                System.out.println(e.getMessage());
             }
         }
     }

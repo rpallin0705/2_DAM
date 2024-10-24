@@ -16,7 +16,7 @@ public class UsuarioDaoImp implements UsuarioDao {
 
     
     public List<Usuario> findAll(){
-        List<Usuario> listaUsuarios = new ArrayList<Usuario>();
+        List<Usuario> listaUsuarios = new ArrayList<>();
         try {
             String sql = "select * from usuario";
             Conexion con = new Conexion();
@@ -34,7 +34,7 @@ public class UsuarioDaoImp implements UsuarioDao {
             }
             conexion.close();
         } catch (Exception e) {
-            return null;
+            return new ArrayList<>();
         }
         return listaUsuarios;
     }
@@ -58,7 +58,7 @@ public class UsuarioDaoImp implements UsuarioDao {
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setString(1, u.getUsername());
             ps.setString(2, u.getPassword());
-            ps.setString(3, u.getTipo().toString());
+            ps.setString(3, u.getTipo());
             ps.setString(4, u.getEmail());
             if (ps.executeUpdate() == 0)
                 resultado = false;
@@ -177,7 +177,7 @@ public class UsuarioDaoImp implements UsuarioDao {
             ps.setString(1, n.getUsername());
             ps.setString(2, n.getPassword());
             ps.setString(3, n.getPassword());
-            ps.setString(4, n.getTipo().toString());
+            ps.setString(4, n.getTipo());
             ps.setInt(5, id);
 
             if (ps.executeUpdate() == 0)
