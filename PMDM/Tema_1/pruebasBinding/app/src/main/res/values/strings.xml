@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pruebasBinding</string>
+
+    <!--fichero de preferencias compartidas-->
+    <string name="name_prefered_shared_file">shared_file</string>
+
+    <!--telefono para almacenar-->
+    <string name="name_shared_phone">phone_number</string>
+</resources>
