@@ -1,20 +1,17 @@
 # Use root/example as user/password credentials
-
-version: '3.1'
-
 services:
 
   adminer-gesaca:
     image: adminer
     restart: "no"
     ports:
-      - 8182:8080
+      - $MYSQL_PORTS
 
   db-gesaca:
     image: mysql:latest
     restart: "no"
     environment:
-      MYSQL_ROOT_PASSWORD: zx76wbz7FG89k
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
     ports:
-      - 33307:3306
+      - $ADMYNER_PORTS
 
