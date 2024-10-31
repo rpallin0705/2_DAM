@@ -1,0 +1,24 @@
+extends ../templates/layout.pug
+block content
+    div 
+        table(border="1px solid")
+            thead 
+                tr 
+                    th Id 
+                    th Nombre 
+                    th Apellido 
+                    th Borrar 
+                    th Editar
+            tbody 
+                each alumno in alumnos
+                    tr 
+                        th #{alumno.id}
+                        th #{alumno.nombre}
+                        th #{alumno.apellido}
+                        td 
+                            a(href=`alumnos/del/${alumno.id}`) Borrar
+                        td 
+                            a(href=`alumnos/edit/${alumno.id}`) Editar
+        p 
+            a(href="/alumnos/add") Añadir alumno nuevo 
+  

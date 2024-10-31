@@ -26,33 +26,121 @@ app.listen(port, () => {
 });
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: "localhost",
   port: 33307,
-  user: 'root',
-  password: 'zx76wbz7FG89k',
-  database: 'gestion',
+  user: "root",
+  password: "zx76wbz7FG89k",
+  database: "gestion",
 });
 
 // Conexión a MySQL
-db.connect(err => {
+db.connect((err) => {
   if (err) {
-    console.error('Error al conectar a MySQL:', err);
+    console.error("Error al conectar a MySQL:", err);
     return;
   }
-  console.log('Conexión exitosa a MySQL');
+  console.log("Conexión exitosa a MySQL");
 });
 
 // req y res son dos parametros preestablecidos que corresponden a request y response
 app.get("/", (req, res) => {
-  res.render("index")
+  res.render("index");
 });
 
-app.get("/alumnos", () => {
+app.get("/alumnos", (req, res) => {
+  db.query("Select * from `alumno`", (err, result) => {
+    if (err) res.send("Error al hacer la consulta");
+    else res.render("alumnos/alumnos", { alumnos: result });
+  });
+});
+
+app.get("/alumnos/add", (req, res) => {
+  res.render("alumnos/add");
+});
+
+app.post("/alumnos/add", (req, res) => {
+  const { nombre, apellido } = req.body;
   db.query(
-    'Select * from `alumnos`',
-    (err, result) => {
-      if (err) res.send("Error al hacer la consulta")
-      else res.render('alumnos', {alumnos: result})
+    "Insert Into alumno (nombre, apellido) Values (?,?)",
+    [nombre, apellido],
+    (error, result) => {
+      if (error) res.send("ERROR INSERTANDO ALUMNOS");
+      else res.redirect("/alumnos");
     }
-  )
+  );
+});
+
+// Borrar
+
+app.get("/alumnos/del/:id", (req, res) => {
+  const { id } = req.params['id'];
+  if (isNaN(id)) res.send("PARAMETROS INCORRECTOS");
+  else {
+    db.query("Select * From alumno Where id=?", id, (error, result) => {
+      if (error) res.send("ERROR AL BORRAR");
+      else if (result.length > 0) {
+        res.render("alumnos/del", { alumnos: result[0] });
+      } else {
+        res.send("ERROR AL BORRAR EL ALUMNO, NO EXISTE");
+      }
+    });
+
+    res.render("alumnos/del");
+  }
+});
+
+app.post("/alumnos/del/:id", (req, res) => {
+  const { id, nombre, apellido } = req.body;
+
+  const { param } = req.params["id"];
+
+  if (isNaN(id) || isNaN(param) || id !== param) {
+    res.send('ERROS BORRANDO')
+  } else {
+    db.query(
+      "Insert Into alumno (nombre, apellido) Values (?,?)",
+      [nombre, apellido],
+      (error, result) => {
+        if (error) res.send("ERROR INSERTANDO ALUMNOS");
+        else res.redirect("/alumnos");
+      }
+    );
+  }
+});
+
+// Editar
+app.get("/alumnos/edit/:id", (req, res) => {
+  const { id } = req.params;
+  if (isNaN(id)) res.send("PARAMETROS INCORRECTOS");
+  else {
+    db.query("Select * From alumno Where id=?", id, (error, result) => {
+      if (error) res.send("ERROR AL ACTUALIZAR");
+      else if (result.length > 0) {
+        res.render("alumnos/del", { alumnos: result[0] });
+      } else {
+        res.send("ERROR AL ACTUALIZAR EL ALUMNO, NO EXISTE");
+      }
+    });
+
+    res.render("alumnos/del");
+  }
+});
+
+app.post("/alumnos/edit/:id", (req, res) => {
+  const { id, nombre, apellido } = req.body;
+
+  const { param } = req.params["id"];
+
+  if (isNaN(id) || isNaN(param) || id !== param) {
+    res.send('ERROR ACTUALIZANDO')
+  } else {
+    db.query(
+      "Update alumno Set nombre = ?, apellido = ? Where id = ?",
+      [nombre, apellido, id],
+      (error, result) => {
+        if (error) res.send("ERROR ACTUALIZANDO ALUMNOS");
+        else res.redirect("/alumnos");
+      }
+    );
+  }
 });

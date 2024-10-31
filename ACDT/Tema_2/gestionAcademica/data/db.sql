@@ -49,3 +49,9 @@ CREATE TABLE profesor_asignatura (
 	FOREIGN KEY (profesor) REFERENCES profesor(id),
 	FOREIGN KEY (asignatura) REFERENCES asignatura(id) 
 );
+
+INSERT INTO alumno (nombre, apellido) VALUES ('Juan', 'Pérez');
+INSERT INTO alumno (nombre, apellido) VALUES ('María', 'González');
+INSERT INTO alumno (nombre, apellido) VALUES ('Luis', 'Martínez');
+INSERT INTO alumno (nombre, apellido) VALUES ('Ana', 'López');
+INSERT INTO alumno (nombre, apellido) VALUES ('Carlos', 'Hernández');

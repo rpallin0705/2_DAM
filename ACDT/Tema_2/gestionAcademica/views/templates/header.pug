@@ -11,13 +11,13 @@ html(lang="en")
       ul
         li
           a(href="/") Inicio
-        if user
-          li
-            a(href="/alumnos") Alumnos
-          li 
-            a(href="/asignaturas") Asignaturas
-          li
-            a(href="/logout") Cerrar sesión
-        else
+        //- if user
+        li
+          a(href="/alumnos") Alumnos
+        li 
+          a(href="/asignaturas") Asignaturas
+        li
+          a(href="/logout") Cerrar sesión
+        //- else
           li
             a(href="/login") Iniciar Sesión
