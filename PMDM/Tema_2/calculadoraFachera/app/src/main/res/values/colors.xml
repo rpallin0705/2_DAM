@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#e040fb</color>
+    <color name="purple">#512da8</color>
+
+    <color name="main_button_pressed">#9c27b0</color>
+    <color name="main_button_unpressed">#512da8</color>
+    <color name="main_border_pressed">#512da8</color>
+    <color name="main_border_unpressed">#9c27b0</color>
+
+    <color name="secondary_button_pressed">#212121</color>
+    <color name="secondary_button_unpressed">#757575</color>
+    <color name="secondary_border_pressed">#757575</color>
+    <color name="secondary_border_unpressed">#212121</color>
+
+    <color name="terciary_button_pressed">#e040fb</color>
+    <color name="terciary_button_unpressed">#D1C4E9</color>
+    <color name="terciary_border_pressed">#D1C4E9</color>
+    <color name="terciary_border_unpressed">#e040fb</color>
+</resources>

@@ -1,0 +1,14 @@
+extends ../templates/layout
+
+block content
+
+    h1 Borrar Alumno
+    form(method='post')
+        label(for='nombre') Nombre:
+        input(type='text', name='nombre', value=`${alumno.nombre}`, disabled)
+        br
+        label(for='apellido') Apellido:
+        input(type='text', name='apellido', value=`${alumno.apellido}`, disabled)
+        br
+        input(type='hidden', name='id', value=`${alumno.id}`, required=true)
+        button(type='submit') Agregar Alumno

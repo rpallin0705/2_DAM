@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+            include ../styles/styles.css
+    body 
+    h2 Gestión Académica
+    nav
+      ul
+        li
+          a(href="/") Inicio
+        //- if user
+        li
+          a(href="/alumnos") Alumnos
+        li 
+          a(href="/asignaturas") Asignaturas
+        li
+          a(href="/logout") Cerrar sesión
+        //- else
+          li
+            a(href="/login") Iniciar Sesión

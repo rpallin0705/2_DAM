@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:startColor="@color/purple"
+        android:endColor="@color/pink"
+        android:angle="125"/>
+
+    <!-- Para dar un borde -->
+    <stroke
+        android:width="1dp"
+        android:color="#e040fb"/>
+
+
+
+    <padding
+        android:bottom="1dp"
+        android:top="1dp"
+        android:left="1dp"
+        android:right="1dp"/>
+</shape>
