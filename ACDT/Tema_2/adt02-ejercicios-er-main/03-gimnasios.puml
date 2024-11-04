@@ -1,0 +1,41 @@
+@startuml Cadena de Gimnasios
+entity "Cliente" {
+    +ID_Cliente : int
+    Nombre : string
+    Correo : string
+    Fecha_Registro : date
+    Telefono : string
+}
+
+entity "Entrenador" {
+    +ID_Entrenador : int
+    Nombre : string
+    Especialidad : string
+    Nivel_Experiencia : string
+}
+
+entity "Plan_Membresia" {
+    +ID_Plan : int
+    Nombre_Plan : string
+    Duracion_Meses : int
+    Costo : float
+}
+
+entity "Sesion" {
+    +ID_Sesion : int
+    Fecha_Hora_Inicio : datetime
+    Duracion_Minutos : int
+}
+
+entity "ClientePlan" {
+    +ID_Cliente : int
+    +ID_Plan : int
+    Fecha_Inicio : date
+}
+
+' Relaciones entre entidades
+Cliente ||--o{ Sesion : Reserva
+Sesion }|--|| Entrenador : Atendida_por
+Cliente ||--|{ ClientePlan : Suscripcion
+ClientePlan }|--|| Plan_Membresia : Incluye
+@enduml

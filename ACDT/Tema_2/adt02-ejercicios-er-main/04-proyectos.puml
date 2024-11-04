@@ -1,0 +1,74 @@
+@startuml Proyectos software
+entity "Proyecto" {
+    +ID_Proyecto : int
+    Nombre_Proyecto : string
+    Fecha_Inicio : date
+    Fecha_Finalizacion : date
+    Presupuesto : float
+}
+
+entity "Empleado" {
+    +ID_Empleado : int
+    Nombre : string
+    Correo : string
+    Puesto : string
+    Fecha_Contratacion : date
+}
+
+entity "Equipo" {
+    +ID_Equipo : int
+    Nombre_Equipo : string
+    Lider : string
+}
+
+entity "Tarea" {
+    +ID_Tarea : int
+    Nombre_Tarea : string
+    Descripcion : string
+    Fecha_Limite : date
+    Estado : string
+}
+
+entity "Tecnologia" {
+    +ID_Tecnologia : int
+    Nombre_Tecnologia : string
+}
+
+entity "ProyectoTecnologia" {
+    +ID_Proyecto : int
+    +ID_Tecnologia : int
+}
+
+entity "EquipoProyecto" {
+    +ID_Equipo : int
+    +ID_Proyecto : int
+}
+
+entity "EmpleadoEquipo" {
+    +ID_Empleado : int
+    +ID_Equipo : int
+}
+
+' Relaciones entre entidades
+Proyecto ||--|{ ProyectoTecnologia : Requiere
+Tecnologia ||--|{ ProyectoTecnologia : Utilizada
+Equipo ||--|{ EquipoProyecto : Asignado_a
+Proyecto ||--|{ EquipoProyecto : Trabaja_en
+Equipo ||--|{ EmpleadoEquipo : Incluye
+Empleado ||--|{ EmpleadoEquipo : Pertenece
+Proyecto ||--|{ Tarea : Incluye
+Empleado ||--|{ Tarea : Asignada_a
+@enduml
+```
+
+### Explicación de la Solución:
+
+- **Proyecto** contiene información sobre los proyectos de la empresa.
+- **Empleado** almacena datos sobre los empleados, incluidos sus puestos y fechas de contratación.
+- **Equipo** representa los equipos que trabajan en diferentes proyectos y puede tener un líder de equipo.
+- **Tarea** representa cada tarea dentro de un proyecto y está asignada a un empleado.
+- **Tecnologia** contiene las tecnologías que la empresa utiliza.
+- **ProyectoTecnologia** es una tabla de unión que representa la relación de muchos-a-muchos entre **Proyecto** y **Tecnología**.
+- **EquipoProyecto** representa la relación de muchos-a-muchos entre **Equipo** y **Proyecto**.
+- **EmpleadoEquipo** representa la relación de muchos-a-muchos entre **Empleado** y **Equipo**.
+
