@@ -7,15 +7,16 @@ services:
       image: mysql:latest
       restart: "no"
       environment:
-        MYSQL_ROOT_PASSWORD: zx76wbz7FG89k
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       ports:
-        - 33307:3306    
-  
+        - ${MYSQL_PORTS}    
+      volumes:
+        - ./scripts:/docker-entrypoint-initdb.d
   adminer:
       image: adminer
       restart: "no"
       ports:
-        -  8182:8080 
+        -  ${ADMYNER_PORTS} 
 
   
 
