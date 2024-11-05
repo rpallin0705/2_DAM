@@ -1,7 +1,5 @@
-const express = require('express')
-const db = require('../db');
-
-
+const express = require("express");
+const db = require("../db");
 
 exports.listarAlumnos = (req, res) => {
   db.query("Select * from `alumno`", (err, result) => {
@@ -11,8 +9,17 @@ exports.listarAlumnos = (req, res) => {
 };
 
 exports.alumnoAdd = (req, res) => {
+  const { nombre, apellido } = req.body;
+  db.query(
+    "Insert Into alumno (nombre, apellido) Values (?,?)",
+    [nombre, apellido],
+    (error, result) => {
+      if (error) res.send("ERROR INSERTANDO ALUMNOS");
+      else res.redirect("");
+    }
+  );
   res.render("alumnos/add");
-}
+};
 
 app.post("/alumnos/add", (req, res) => {
   const { nombre, apellido } = req.body;
@@ -28,7 +35,7 @@ app.post("/alumnos/add", (req, res) => {
 
 // Borrar
 
-app.get("/alumnos/del/:id", (req, res) => {
+exports.deleteAlumno = (req, res) => {
   const { id } = req.params.id;
   if (isNaN(id)) res.send("PARAMETROS INCORRECTOS");
   else {
@@ -43,7 +50,7 @@ app.get("/alumnos/del/:id", (req, res) => {
 
     res.render("alumnos/del");
   }
-});
+};
 
 app.post("/alumnos/del/:id", (req, res) => {
   const { id, nombre, apellido } = req.body;

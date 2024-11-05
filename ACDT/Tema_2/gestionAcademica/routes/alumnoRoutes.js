@@ -11,35 +11,12 @@ router.get("/", alumnosController.listarAlumnos);
 router.get("/add", alumnosController.alumnoAdded); 
 
 router.post("/add", (req, res) => {
-  const { nombre, apellido } = req.body;
-  db.query(
-    "Insert Into alumno (nombre, apellido) Values (?,?)",
-    [nombre, apellido],
-    (error, result) => {
-      if (error) res.send("ERROR INSERTANDO ALUMNOS");
-      else res.redirect("");
-    }
-  );
+  
 });
 
 // Borrar
 
-router.get("/del/:id", (req, res) => {
-  const { id } = req.params.id;
-  if (isNaN(id)) res.send("PARAMETROS INCORRECTOS");
-  else {
-    db.query("Select * From alumno Where id=?", id, (error, result) => {
-      if (error) res.send("ERROR AL BORRAR");
-      else if (result.length > 0) {
-        res.render("alumnos/del", { alumnos: result[0] });
-      } else {
-        res.send("ERROR AL BORRAR EL ALUMNO, NO EXISTE");
-      }
-    });
-
-    res.render("alumnos/del");
-  }
-});
+router.delete("/alumnos/del/:id",alumnosController.deleteAlumno);
 
 router.post("/del/:id", (req, res) => {
   const { id, nombre, apellido } = req.body;

@@ -48,3 +48,8 @@ app.get('/hola', (req, res) =>{
     res.send('Hola mundo');
 })
 ```
+
+### CRUD ALUMNOS
+VERBO | RUTA | DESCRIPCION
+------|------|------------
+GET | /alumnos | Obtiene el listado de alumnos
