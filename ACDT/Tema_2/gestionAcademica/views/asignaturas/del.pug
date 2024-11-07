@@ -1,0 +1,23 @@
+extends ../templates/layout
+
+block content 
+
+    h3 Borrar una asignatura
+    div 
+        form(method="post") 
+            label(for="nombre") Módulo:
+            input(type="text", name="nombre", value=`${asignatura.nombre}`, disabled)                
+            br
+            label(for="apellido") Ciclo:
+            select(name="ciclo", disabled) 
+                option(value="ASIR" selected=asignatura.ciclo === 'ASIR') ASIR
+                option(value="DAM"  selected=asignatura.ciclo === 'DAM')  DAM
+                option(value="DAW"  selected=asignatura.ciclo === 'DAW')  DAW
+                option(value="SMR"  selected=asignatura.ciclo === 'SMR')  SMR
+            br
+            label(for="curso") Curso (entre 1 y 3): 
+            input(type="number", name="curso", min="1", max="3", value=`${asignatura.curso}`, disabled)
+            br
+            input(type="hidden", name="id", value=`${asignatura.id}`)
+            input(type="submit", value="Enviar")
+        p ¿Realmente quiere borrar esta asignatura?

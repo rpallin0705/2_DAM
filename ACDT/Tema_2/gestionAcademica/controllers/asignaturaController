@@ -1,0 +1,157 @@
+const db = require('../db')
+
+exports.asignaturas = (req, res) => {
+  db.query(
+    'SELECT * FROM `asignatura`',
+    (err, response) => {
+      if (err) res.send('ERROR al hacer la consulta')
+      else res.render('asignaturas/list', { asignaturas: response })
+    }
+  );
+};
+
+exports.asignaturaAddFormulario = (req, res) => {
+  res.render('asignaturas/add');
+};
+
+exports.asignaturaAdd = (req, res) => {
+  const { nombre, ciclo, curso } = req.body;
+  db.query(
+    'INSERT INTO asignatura (nombre, ciclo, curso) VALUES (?,?,?)',
+    [nombre, ciclo, curso],
+    (error, respuesta) => {
+      if (error) res.send('ERROR INSERTANDO asignatura' + req.body)
+      else res.redirect('/asignaturas')
+    }
+  );
+};
+
+exports.asignaturaDelFormulario = (req, res) => {
+  const { id } = req.params;
+  if (isNaN(id)) res.send('PARAMETROS INCORRECTOS')
+  else
+    db.query(
+      'SELECT * FROM asignatura WHERE id=?',
+      id,
+      (error, respuesta) => {
+        if (error) res.send('ERROR al INTENTAR BORRAR EL asignatura')
+        else {
+          if (respuesta.length > 0) {
+            res.render('asignaturas/del', { asignatura: respuesta[0] })
+          } else {
+            res.send('ERROR al INTENTAR BORRAR EL asignatura, NO EXISTE')
+          }
+        }
+      });
+
+};
+
+exports.asignaturaDel = (req, res) => {
+
+  const { id, nombre, apellido } = req.body;
+  const paramId = req.params['id'];
+
+  if (isNaN(id) || isNaN(paramId) || id !== paramId) {
+    res.send('ERROR BORRANDO')
+  } else {
+    db.query(
+      'DELETE FROM asignatura WHERE id=?',
+      id,
+      (error, respuesta) => {
+        if (error) res.send('ERROR BORRANDO asignatura' + req.body)
+        else res.redirect('/asignaturas')
+      }
+    );
+  }
+};
+
+exports.asignaturaEditFormulario = (req, res) => {
+  const { id } = req.params;
+  if (isNaN(id)) res.send('PARAMETROS INCORRECTOS')
+  else
+    db.query(
+      'SELECT * FROM asignatura WHERE id=?',
+      id,
+      (error, respuesta) => {
+        if (error) res.send('ERROR al INTENTAR ACTUALIZAR EL asignatura')
+        else {
+          if (respuesta.length > 0) {
+            res.render('asignaturas/edit', { asignatura: respuesta[0] })
+          } else {
+            res.send('ERROR al INTENTAR ACTUALIZAR EL asignatura, NO EXISTE')
+          }
+        }
+      });
+};
+
+exports.asignaturaEdit = (req, res) => {
+
+  const { id, nombre, ciclo, curso } = req.body;
+  const paramId = req.params['id'];
+
+  if (isNaN(id) || isNaN(paramId) || id !== paramId) {
+    res.send('ERROR ACTUALIZANDO asignatura')
+  } else {
+    db.query(
+      'UPDATE `asignatura` SET `nombre` = ?, `ciclo` = ? , `curso` = ? ' +
+      ' WHERE `id` = ?',
+      [nombre, ciclo, curso, id],
+      (error, respuesta) => {
+        if (error) {
+          res.send('ERROR ACTUALIZANDO asignatura' + error)
+          console.log(error)
+        }
+        else res.redirect('/asignaturas')
+      }
+    );
+  }
+};
+
+
+// GET	/asignaturas/:idAsig/matriculas	Listar los alumnos matriculados
+exports.matriculas = (req, res) => {
+  if (isNaN(req.params.id))
+    res.send('Error al buscar la asignatura')
+  else {
+    db.query(
+      'SELECT * FROM `asignatura` ',
+      (error, listaAsignaturas) => {
+        if (!error) {            
+            db.query(
+              'SELECT alumno.* ' +
+              'FROM alumno ' +
+              'JOIN alumno_asignatura ON alumno.id = alumno_asignatura.alumno ' +
+              'JOIN asignatura ON asignatura.id = alumno_asignatura.asignatura ' +
+              'WHERE asignatura.id = ? ',
+              [req.params.id],
+              (err, listaAlumnos) => {
+                if (err) res.send('ERROR al hacer la consulta')
+                else {
+                  res.render('asignaturas/matriculas', 
+                    { alumnos: listaAlumnos, asignaturas: listaAsignaturas, idAsignatura: req.params.id })
+                }
+              }
+            );
+          } else {
+            res.send('La asignatura no tiene alumnos matriculados');
+          }        
+      }
+    );
+  }
+};
+
+exports.matriculaAddFormulario = (req, res) => {
+
+};
+
+exports.matriculaAdd = (req, res) => {
+
+};
+
+exports.matriculaDelFormulario = (req, res) => {
+
+};
+
+exports.matriculaDel = (req, res) => {
+
+};
