@@ -3,11 +3,11 @@ const mysql = require("mysql2");
 
 // conexion a base de datos
 const db = mysql.createConnection({
-  host: process.env.MYSQL_HOST || "localhost",
-  port: process.env.MYSQL_PORT || 33307,
-  user: process.env.MYSQL_USERNAME || root,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE,
+  host: "localhost",
+  port: 33307,
+  user: "root",
+  password: "zx76wbz7FG89k",
+  database: "gestion",
 });
 
 // Conexión a MySQL

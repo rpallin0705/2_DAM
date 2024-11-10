@@ -1,14 +1,14 @@
 extends ../templates/layout
 
-block content
-
-    h1 Editar Alumno
-    form(method='post')
-        label(for='nombre') Nombre:
-        input(type='text', name='nombre', value=`${alumno.nombre}`)
-        br
-        label(for='apellido') Apellido:
-        input(type='text', name='apellido', value=`${alumno.apellido}`)
-        br
-        input(type='hidden', name='id', value=`${alumno.id}`, required=true)
-        button(type='submit') Agregar Alumno
+block content 
+    h3 Editar un alumno
+        div 
+            form(method="post") 
+                label(for="nombre") Nombre:
+                input(type="text", name="nombre", value=`${alumno.nombre}`)
+                br
+                label(for="apellido") Apellido:
+                input(type="text", name="apellido", value=`${alumno.apellido}`)
+                br
+                input(type="hidden", name="id", value=`${alumno.id}`)
+                input(type="submit", value="Enviar")

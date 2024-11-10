@@ -1,0 +1,31 @@
+extends ../templates/layout
+
+block content
+
+        div 
+            h3 listado de asignaturas
+            table(border=1)
+                thead 
+                    tr
+                        th id
+                        th Módulo
+                        th Ciclo
+                        th Curso 
+                        th editar
+                        th borrar
+                        th matriculas
+                tbody 
+                    each asignatura in asignaturas
+                        tr 
+                            td=asignatura.id
+                            td=asignatura.nombre                        
+                            td=asignatura.ciclo
+                            td=asignatura.curso
+                            td 
+                                a(href=`/asignaturas/edit/${asignatura.id}`) editar 
+                            td 
+                                a(href=`/asignaturas/del/${asignatura.id}`) borrar
+                            td 
+                                a(href=`/asignaturas/${asignatura.id}/matriculas`) matriculas
+            p 
+                a(href="/asignaturas/add") Añadir una asignatura nueva

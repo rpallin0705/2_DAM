@@ -1,0 +1,35 @@
+extends ../templates/layout
+
+block content
+
+        div 
+            h3 Listado de alumnos matriculados en 
+                each asignatura in asignaturas
+                    if asignatura.id == idAsignatura
+                        span #{asignatura.nombre}                    
+            div 
+                p Seleccione otra asignatura para ver sus matrículas: 
+                select(name="asginatura") 
+                    each asignatura in asignaturas
+                        if asignatura.id == idAsignatura
+                            option(value=`${asignatura.id}` selected) #{asignatura.nombre}
+                        else 
+                            option(value=`${asignatura.id}`) #{asignatura.nombre}
+            div 
+                table(border=1)
+                    thead 
+                        tr
+                            th id
+                            th nombre 
+                            th apellido
+                            th dar de baja
+                    tbody 
+                        each alumno in alumnos
+                            tr 
+                                td=alumno.id
+                                td=alumno.nombre                        
+                                td=alumno.apellido
+                                td 
+                                    a(href=`/asignatura/${idAsignatura}/del/${alumno.id}`) baja
+                p 
+                    a(href=`/asignatura/${idAsignatura}/add`) Matricular otro alumno

@@ -1,102 +1,108 @@
-const express = require('express')
-const db = require('../db');
+const db = require('../db')
 
+exports.alumnos = (req, res) => {
+  db.query(
+    'SELECT * FROM `alumno`',
+    (err, response) => {
+      if (err) res.send('ERROR al hacer la consulta')
+      else res.render('alumnos/list', { alumnos: response })
+    }
+  );
+};
 
-
-exports.listarAlumnos = (req, res) => {
-  db.query("Select * from `alumno`", (err, result) => {
-    if (err) res.send("Error al hacer la consulta");
-    else res.render("alumnos/alumnos", { alumnos: result });
-  });
+exports.alumnoAddFormulario = (req, res) => {
+  res.render('alumnos/add');
 };
 
 exports.alumnoAdd = (req, res) => {
-  res.render("alumnos/add");
-}
-
-app.post("/alumnos/add", (req, res) => {
   const { nombre, apellido } = req.body;
   db.query(
-    "Insert Into alumno (nombre, apellido) Values (?,?)",
+    'INSERT INTO alumno (nombre, apellido) VALUES (?,?)',
     [nombre, apellido],
-    (error, result) => {
-      if (error) res.send("ERROR INSERTANDO ALUMNOS");
-      else res.redirect("/alumnos");
+    (error, respuesta) => {
+      if (error) res.send('ERROR INSERTANDO ALUMNO' + req.body)
+      else res.redirect('/alumnos')
     }
   );
-});
+};
 
-// Borrar
-
-app.get("/alumnos/del/:id", (req, res) => {
-  const { id } = req.params.id;
-  if (isNaN(id)) res.send("PARAMETROS INCORRECTOS");
-  else {
-    db.query("Select * From alumno Where id=?", id, (error, result) => {
-      if (error) res.send("ERROR AL BORRAR");
-      else if (result.length > 0) {
-        res.render("alumnos/del", { alumnos: result[0] });
-      } else {
-        res.send("ERROR AL BORRAR EL ALUMNO, NO EXISTE");
-      }
-    });
-
-    res.render("alumnos/del");
-  }
-});
-
-app.post("/alumnos/del/:id", (req, res) => {
-  const { id, nombre, apellido } = req.body;
-
-  const { param } = req.params["id"];
-
-  if (isNaN(id) || isNaN(param) || id !== param) {
-    res.send("ERROS BORRANDO");
-  } else {
-    db.query(
-      "Insert Into alumno (nombre, apellido) Values (?,?)",
-      [nombre, apellido],
-      (error, result) => {
-        if (error) res.send("ERROR INSERTANDO ALUMNOS");
-        else res.redirect("/alumnos");
-      }
-    );
-  }
-});
-
-// Editar
-app.get("/alumnos/edit/:id", (req, res) => {
+exports.alumnoDelFormulario = (req, res) => {
   const { id } = req.params;
-  if (isNaN(id)) res.send("PARAMETROS INCORRECTOS");
-  else {
-    db.query("Select * From alumno Where id=?", id, (error, result) => {
-      if (error) res.send("ERROR AL ACTUALIZAR");
-      else if (result.length > 0) {
-        res.render("alumnos/del", { alumnos: result[0] });
-      } else {
-        res.send("ERROR AL ACTUALIZAR EL ALUMNO, NO EXISTE");
-      }
-    });
+  if (isNaN(id)) res.send('PARAMETROS INCORRECTOS')
+  else
+    db.query(
+      'SELECT * FROM alumno WHERE id=?',
+      id,
+      (error, respuesta) => {
+        if (error) res.send('ERROR al INTENTAR BORRAR EL ALUMNO')
+        else {
+          if (respuesta.length > 0) {
+            res.render('alumnos/del', { alumno: respuesta[0] })
+          } else {
+            res.send('ERROR al INTENTAR BORRAR EL ALUMNO, NO EXISTE')
+          }
+        }
+      });
 
-    res.render("alumnos/del");
-  }
-});
+};
 
-app.post("/alumnos/edit/:id", (req, res) => {
+exports.alumnoDel = (req, res) => {
+
   const { id, nombre, apellido } = req.body;
+  const paramId = req.params['id'];
 
-  const { param } = req.params["id"];
-
-  if (isNaN(id) || isNaN(param) || id !== param) {
-    res.send("ERROR ACTUALIZANDO");
+  if (isNaN(id) || isNaN(paramId) || id !== paramId) {
+    res.send('ERROR BORRANDO')
   } else {
     db.query(
-      "Update alumno Set nombre = ?, apellido = ? Where id = ?",
-      [nombre, apellido, id],
-      (error, result) => {
-        if (error) res.send("ERROR ACTUALIZANDO ALUMNOS");
-        else res.redirect("/alumnos");
+      'DELETE FROM alumno WHERE id=?',
+      id,
+      (error, respuesta) => {
+        if (error) res.send('ERROR BORRANDO ALUMNO' + req.body)
+        else res.redirect('/alumnos')
       }
     );
   }
-});
+};
+
+exports.alumnoEditFormulario = (req, res) => {
+  const { id } = req.params;
+  if (isNaN(id)) res.send('PARAMETROS INCORRECTOS')
+  else
+    db.query(
+      'SELECT * FROM alumno WHERE id=?',
+      id,
+      (error, respuesta) => {
+        if (error) res.send('ERROR al INTENTAR ACTUALIZAR EL ALUMNO')
+        else {
+          if (respuesta.length > 0) {
+            res.render('alumnos/edit', { alumno: respuesta[0] })
+          } else {
+            res.send('ERROR al INTENTAR ACTUALIZAR EL ALUMNO, NO EXISTE')
+          }
+        }
+      });
+};
+
+exports.alumnoEdit = (req, res) => {
+
+  const { id, nombre, apellido } = req.body;
+  const paramId = req.params['id'];
+
+  if (isNaN(id) || isNaN(paramId) || id !== paramId) {
+    res.send('ERROR ACTUALIZANDO')
+  } else {
+    db.query(
+      'UPDATE `alumno` SET `nombre` = ?, `apellido` = ? ' +
+      ' WHERE `id` = ?',
+      [nombre, apellido, id],
+      (error, respuesta) => {
+        if (error) {
+          res.send('ERROR ACTUALIZANDO ALUMNO' + error)
+          console.log(error)
+        }
+        else res.redirect('/alumnos')
+      }
+    );
+  }
+};
